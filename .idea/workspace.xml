@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="" />
+    <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Resources/EventTypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/EventTypeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/EventTypeRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/EventType/EloquantEventTypeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/EventType/EloquantEventTypeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/EventTypeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/EventTypeService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +22,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -148,6 +161,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1eaBqvuWrAq2csHhMlZHHmXXUQx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -156,20 +170,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ib4broker_crm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/DataTables" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\novo_nor_disk\app\DataTables" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Services" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Resources\YoutubeVideo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\app\DataTables" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Services" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js\components" />
     </key>
   </component>
   <component name="RunManager">
@@ -352,6 +366,8 @@
       <workItem from="1597052227208" duration="1774000" />
       <workItem from="1597054088516" duration="719000" />
       <workItem from="1597062453919" duration="1545000" />
+      <workItem from="1597070941023" duration="1733000" />
+      <workItem from="1597072772185" duration="311000" />
     </task>
     <servers />
   </component>
@@ -363,10 +379,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1597063302064" />
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597063209134">
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597071279093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597063209134" />
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597071279093" />
     <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1597052817869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -379,10 +395,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594571780118" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597050536655">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597070949052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597050536655" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597070949052" />
     <state x="390" y="125" width="800" height="478" key="find.popup" timestamp="1597053123612">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -13,7 +13,7 @@ class EventTypeRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,13 @@ class EventTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "name"=>["required"]
+        ];
+    }
+    public function attributes()
+    {
+        return [
+            'name'  =>  trans('main.name'),
         ];
     }
 }

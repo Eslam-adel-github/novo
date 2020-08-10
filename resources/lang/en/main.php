@@ -62,5 +62,7 @@ return [
     "contact"=>"Contact",
     "contacts"=>"Contacts",
     "pharmacy"=>"Pharmacy",
-    "pharmacies"=>"Pharmacies"
+    "pharmacies"=>"Pharmacies",
+    "event_type"=>"Event Type",
+    "events_type"=>"Events Types"
 ];

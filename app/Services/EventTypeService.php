@@ -4,6 +4,8 @@
 namespace App\Services;
 
 
+use App\EventType;
+use App\Repositories\Eloquent\EventType\EventTypeRepository;
 use Illuminate\Http\Request;
 
 class EventTypeService
@@ -11,9 +13,9 @@ class EventTypeService
     private $repository = "";
 
     /**
-     * @param CategoryFaqRepository $repository
+     * @param EventTypeRepository $repository
      */
-    public function __construct(CategoryFaqRepository $repository)
+    public function __construct(EventTypeRepository $repository)
     {
         $this->repository = $repository;
     }
@@ -22,9 +24,9 @@ class EventTypeService
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return CategoryLibrary
+     * @return EventType
      */
-    public function store($request): CategoryFaq
+    public function store($request): EventType
     {
         $data = $request->all();
 
@@ -40,7 +42,7 @@ class EventTypeService
      * @param int $id
      * @return bool
      */
-    public function update($request, $id): CategoryFaq
+    public function update($request, $id): EventType
     {
         $data = $request->all();
 

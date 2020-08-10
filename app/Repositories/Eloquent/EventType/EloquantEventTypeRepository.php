@@ -3,10 +3,17 @@
 
 namespace App\Repositories\Eloquent\EventType;
 
-
-use Dotenv\Repository\AbstractRepository;
+use App\EventType;
+use App\Repositories\Abstracts\RepositoryAbstract;
 
 class EloquantEventTypeRepository extends  RepositoryAbstract implements EventTypeRepository
 {
 
+    /**
+     * @inheritDoc
+     */
+    public function entity(): string
+    {
+        return EventType::class;
+    }
 }
