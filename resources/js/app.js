@@ -80,6 +80,12 @@ Vue.use(VueGoogleMaps, {
 Vue.use(VeeValidate);
 Vue.component('google-map', require('./Components/GoogleMap.vue').default);
 
+// import Select2Component
+import Select2 from './Components/Select2.vue';
+Vue.component('select2', Select2);
+Vue.component('form-group-input-tags2', require('./components/FormGroupTags2Component.vue').default);
+
+
 
 import VueGlobalVar from "vue-global-var";
 

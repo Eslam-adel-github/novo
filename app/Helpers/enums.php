@@ -1,7 +1,7 @@
 <?php
 
 /*
-Not needed as we can rely on roles 
+Not needed as we can rely on roles
 function user_types()
 {
     return [
@@ -11,3 +11,9 @@ function user_types()
     ];
 }
 */
+function getParticipations(){
+    return [
+        "doctor",
+        "public"
+    ];
+}

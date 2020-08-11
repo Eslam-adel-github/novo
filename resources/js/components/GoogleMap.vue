@@ -1,5 +1,5 @@
 <template>
-	<div class="col-sm-9">
+	<div class="col-sm-12">
 		<div class="row" style="margin-bottom: 20px;">
 			<gmap-autocomplete class="form-control col-10" @place_changed="setPlace"></gmap-autocomplete>
 

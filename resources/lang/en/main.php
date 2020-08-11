@@ -64,5 +64,18 @@ return [
     "pharmacy"=>"Pharmacy",
     "pharmacies"=>"Pharmacies",
     "event_type"=>"Event Type",
-    "events_type"=>"Events Types"
+    "events_type"=>"Events Types",
+    'templete_event'=>"Templete Event",
+    "templete_events"=>"Templete Events",
+    "templete_name"=>"Templete Name",
+    "event_name"=>"Event Name",
+    "event_description"=>"Event Description",
+    "tags"=>"Tags",
+    "write_tags"=>"Write Tags",
+    "agenda"=>"Agenda",
+    "participations"=>"participations",
+    "doctor"=>"Doctors",
+    "public"=>"Public",
+    "address"=>"Address",
+    "location"=>"location"
 ];

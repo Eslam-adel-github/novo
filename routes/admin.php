@@ -21,6 +21,9 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
     Route::resource('/HCP', 'Resource\HCPController');
     Route::resource('/pharmacy', 'Resource\PharmacyController');
     Route::resource('/event_type', 'Resource\EventTypeController');
+    Route::resource('/templete_event', 'Resource\TempleteEventController');
+
+    Route::get('/events_type_all', 'SAC\GetAllEventType')->name('events_type.all');
     //Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');
 
 
