@@ -3,16 +3,39 @@
   <component name="ChangeListManager">
     <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/enums.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/enums.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/CategoryFaqDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CategoryFaqDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/CategoryLibraryDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CategoryLibraryDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/EventTypeDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/EventTypeDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/FaqDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/FaqDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/HCPDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/HCPDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/LibraryDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/LibraryDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/PharmacyDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/PharmacyDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/RethinkObesityDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/RethinkObesityDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/TempleteEventDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/TempleteEventDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/YoutubeVideoDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/YoutubeVideoDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EventType/EventType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EventType/EventType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TempleteEventService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/TempleteEventService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/GoogleMap.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/GoogleMap.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/hcp/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/hcp/_partials/_fields.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/pharmacy/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pharmacy/_partials/_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/templete_event/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/templete_event/_partials/_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/templete_event/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/templete_event/_partials/_scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/templete_event/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/templete_event/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,20 +195,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Helpers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Resources\YoutubeVideo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Helpers" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js\components" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\app\DataTables" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Services" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Resources\YoutubeVideo" />
     </key>
   </component>
   <component name="RunManager">
@@ -382,7 +405,34 @@
       <workItem from="1597154600329" duration="1820000" />
       <workItem from="1597156451249" duration="1777000" />
       <workItem from="1597158262118" duration="1334000" />
-      <workItem from="1597160069870" duration="1566000" />
+      <workItem from="1597160069870" duration="1786000" />
+      <workItem from="1597220814055" duration="899000" />
+      <workItem from="1597222529114" duration="1748000" />
+      <workItem from="1597225204792" duration="1771000" />
+      <workItem from="1597227010773" duration="866000" />
+      <workItem from="1597229464420" duration="1795000" />
+      <workItem from="1597231298727" duration="1898000" />
+      <workItem from="1597233243074" duration="1770000" />
+      <workItem from="1597235046720" duration="1776000" />
+      <workItem from="1597236857398" duration="1776000" />
+      <workItem from="1597238693140" duration="1887000" />
+      <workItem from="1597240660203" duration="864000" />
+      <workItem from="1597242728034" duration="1854000" />
+      <workItem from="1597244630844" duration="1714000" />
+      <workItem from="1597246463007" duration="1182000" />
+      <workItem from="1597307910910" duration="1720000" />
+      <workItem from="1597309663176" duration="1777000" />
+      <workItem from="1597311548238" duration="1773000" />
+      <workItem from="1597313387290" duration="1776000" />
+      <workItem from="1597315281974" duration="92000" />
+      <workItem from="1597317162376" duration="1776000" />
+      <workItem from="1597318973619" duration="1440000" />
+      <workItem from="1597320810094" duration="1781000" />
+      <workItem from="1597322628385" duration="1776000" />
+      <workItem from="1597324436336" duration="1775000" />
+      <workItem from="1597326244408" duration="471000" />
+      <workItem from="1597328550585" duration="1628000" />
+      <workItem from="1597330402364" duration="1735000" />
     </task>
     <servers />
   </component>
@@ -394,26 +444,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1597063302064" />
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597145631124">
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597241352196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597145631124" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1597136426727">
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597241352196" />
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1597243081519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597136426727" />
-    <state x="387" y="198" key="NewPhpClassDialog" timestamp="1597138762618">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597243081519" />
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1597310603553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="387" y="198" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597138762618" />
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597310603553" />
+    <state x="387" y="198" key="NewPhpClassDialog" timestamp="1597241018561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="198" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597241018561" />
     <state x="517" y="295" key="NewPhpFileDialog" timestamp="1594571780118">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594571780118" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597160088546">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597332292226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597160088546" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597332292226" />
     <state x="390" y="125" width="800" height="478" key="find.popup" timestamp="1597053123612">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

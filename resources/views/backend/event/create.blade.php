@@ -1,0 +1,86 @@
+@extends('backend.layout.app')
+
+@section('styles')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@voerro/vue-tagsinput@2.2.0/dist/style.css">
+@endsection
+
+@section('sub_header')
+
+    @component('backend.layout.components.sub-header')
+        @slot('title')
+            {{ $title }}
+        @endslot
+
+        <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
+        <span class="kt-subheader__breadcrumbs-separator"></span>
+        <a href="{{ route('admin.event.index') }}" class="kt-subheader__breadcrumbs-link">
+            {{ __('main.events') }}
+        </a>
+        <span class="kt-subheader__breadcrumbs-separator"></span>
+        <a href="#" class="kt-subheader__breadcrumbs-link">
+            {{ __('main.add') }}  {{ __('main.event') }}
+        </a>
+
+        @slot('toolbar')
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.event.index') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-list-2"></i>
+                    <span class="kt-nav__link-text">{{ __('main.show-all') }}  {{ __('main.events') }}</span>
+                </a>
+            </li>
+        @endslot
+    @endcomponent
+@endsection
+
+@section('content')
+    @component('backend.layout.components.form-portlet')
+
+        @slot('title')
+            {{ $title }}
+        @endslot
+
+        @slot('prevUrl')
+            {{ route('admin.dashboard') }}
+        @endslot
+
+        @slot('vueEvents')
+            @click="send()"
+        @endslot
+
+        @slot('actions')
+            <button type="button" class="btn btn-brand dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <ul class="kt-nav">
+                    <li class="kt-nav__item">
+                        <a href="#" @click.prevent="send()" class="kt-nav__link">
+                            <i class="kt-nav__link-icon flaticon2-reload"></i>
+                            <span class="kt-nav__link-text">{{ __("main.save_and_continue") }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        @endslot
+
+        <form class="kt-form" id="kt_form" action="#" method="get">
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8">
+                    @include('backend.event._partials._fields', [
+                        'data' => collect(old()),
+                        'action' => 'create',
+                    ])
+                </div>
+                <div class="col-xl-2"></div>
+            </div>
+        </form>
+    @endcomponent
+@endsection
+
+@section('js_scripts')
+    @include('backend.event._partials._scripts', [
+        'action' => 'create',
+        'data' => collect(old()),
+        'submitUrl' => route('admin.event.store'),
+    ])
+@endsection

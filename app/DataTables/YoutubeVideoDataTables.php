@@ -120,7 +120,7 @@ class YoutubeVideoDataTables extends DataTable
             Column::make('name', 'name')->title(trans('main.name')),
             Column::make('hyper_link', 'hyper_link')->title(trans('main.hyper_link')),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
-            Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false),
+            Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];
     }
 

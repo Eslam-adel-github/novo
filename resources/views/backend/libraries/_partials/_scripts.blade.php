@@ -23,11 +23,13 @@
         mounted(){
             axios.get('{{ route('admin.category_library.all') }}').then((res) => {
                 this.category_library = res.data.payload;
+                {{--
                 @if ($action != 'edit')
                     if (this.category_library.length > 0) {
                         this.fData.category_library_id = this.category_library[0]['id'];
                     }
                 @endif
+                --}}
             });
         },
         methods: {

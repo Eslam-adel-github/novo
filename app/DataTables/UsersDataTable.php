@@ -120,7 +120,7 @@ class UsersDataTable extends DataTable
             Column::make('email', 'email')->title(trans('main.email')),
             Column::make('phone', 'phone')->title(trans('main.phone')),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
-            Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false),
+            Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];
     }
 

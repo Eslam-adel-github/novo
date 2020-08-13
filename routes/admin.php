@@ -22,8 +22,11 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
     Route::resource('/pharmacy', 'Resource\PharmacyController');
     Route::resource('/event_type', 'Resource\EventTypeController');
     Route::resource('/templete_event', 'Resource\TempleteEventController');
+    Route::resource('/event', 'Resource\EventController');
 
     Route::get('/events_type_all', 'SAC\GetAllEventType')->name('events_type.all');
+    Route::get('/templete_events_all', 'SAC\GetAllTempleteEvents')->name('templete_events.all');
+    Route::get('/templete_event_single/{parameter}', 'SAC\GetSingleTempleteEvent')->name('get_templete_event.single');
     //Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');
 
 

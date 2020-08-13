@@ -85,6 +85,9 @@ import Select2 from './Components/Select2.vue';
 Vue.component('select2', Select2);
 Vue.component('form-group-input-tags2', require('./components/FormGroupTags2Component.vue').default);
 
+import DatePick from './Components/DatePicker/vueDatePick.vue';
+Vue.component("date-pick", DatePick);
+
 
 
 import VueGlobalVar from "vue-global-var";

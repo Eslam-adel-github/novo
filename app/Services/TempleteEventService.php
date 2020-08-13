@@ -25,19 +25,16 @@ class TempleteEventService
      */
     public function store($request) : TempleteEvent
     {
-        $data = $request->all();
-        if(isset($data['tags'])) {
-            $data["tags"]="abss";
-            /*
+        if(isset($request['tags'])) {
             $normalTags = [];
-            foreach ($data['tags'] as $tag) {
+            $tags = $request['tags'];
+            foreach ($tags as $tag) {
                 array_push($normalTags, $tag['value']);
             }
-            $tags = implode(',', $normalTags);
-            $tags = explode(',', $tags);
-            $data['tags']=$tags;
-            */
+            $request['tags'] = implode(',', $normalTags);
         }
+
+        $data=$request->all();
 
         $object_created = $this->repository->create($data);
 
@@ -53,18 +50,16 @@ class TempleteEventService
      */
     public function update($request, $id) : TempleteEvent
     {
-        $data = $request->all();
-
-        if(isset($data['tags'])) {
+        if(isset($request['tags'])) {
             $normalTags = [];
-
-            foreach ($data['tags'] as $tag) {
+            $tags = $request['tags'];
+            foreach ($tags as $tag) {
                 array_push($normalTags, $tag['value']);
             }
-
-            $data['tags'] = implode(',', $normalTags);
-            $data['tags'] = explode(',', $data['tags']);
+            $request['tags'] = implode(',', $normalTags);
         }
+
+        $data=$request->all();
 
         $this->repository->update($id, $data);
 

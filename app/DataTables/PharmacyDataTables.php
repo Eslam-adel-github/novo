@@ -120,7 +120,7 @@ class PharmacyDataTables extends DataTable
             Column::computed('checkbox', $this->getTitleCheckboxHtml())->width(15)->printable(false),
             Column::make('name', 'name')->title(trans('main.name')),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
-            Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false),
+            Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];
     }
 

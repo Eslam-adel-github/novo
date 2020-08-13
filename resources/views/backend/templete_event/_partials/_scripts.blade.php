@@ -2,7 +2,7 @@
 <input type="hidden" name="h_event_description" value="{{ getData($data, 'event_description') }}">
 <input type="hidden" name="h_address" value="{{ getData($data, 'address') }}">
 <input type="hidden" name="tags" value="{{
-    collect(getData($data, 'tags'))->map(function ($item) {
+    collect(getData($data, 'tags') !=""?explode(',',getData($data, 'tags')):[])->map(function ($item) {
         return [
             'key' => $item,
             'value' => $item,
@@ -22,7 +22,7 @@
                 event_description: $('input[name=h_event_description]').val() == '' ? {} : JSON.parse($('input[name=h_event_description]').val()),
                 event_type_id:"{{getData($data,"event_type_id")}}",
                 image:"{{getData($data,"image")}}",
-                agend:"{{getData($data,"agenda")}}",
+                agenda:"{{getData($data,"agenda")}}",
                 participation:"{{getData($data,"participation")}}",
                 address:$('input[name=h_address]').val() == '' ? {} : JSON.parse($('input[name=h_address]').val()),
                 tags: $('input[name=tags]').val() != '' ? JSON.parse($('input[name=tags]').val()) : [],
@@ -64,7 +64,6 @@
                     if (result) {
                         self = this;
                         var image = new Promise(function (resolve, reject) {
-
                             if ($("#image")[0].files.length > 0) {
                                 images_icon = [];
                                 images_icon.push($("#image")[0].files[0]);
@@ -88,15 +87,16 @@
 
                         });
                         var agenda = new Promise(function (resolve, reject) {
-
                             if ($("#agenda")[0].files.length > 0) {
                                 agenda = [];
                                 agenda.push($("#agenda")[0].files[0]);
                                 Helpers.uploadeFile(agenda,
                                     'agenda',
-                                    self.UploadeRoute
+                                    self.UploadeRoute,
                                 ).then(agenda => {
+
                                         self.fData.agenda = agenda[0];
+
                                         resolve();
                                     }
                                 ).catch(err => {
@@ -124,6 +124,8 @@
                 this.Save()
             },
             Save(){
+                console.log("fdata is : ",this.fData);
+                //return 0;
                 axios.post('{{ $submitUrl }}', this.fData).then((res) => {
                     if (res.data.success) {
                         swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");

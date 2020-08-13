@@ -30,6 +30,8 @@ class RepositoryServiceProvider extends ServiceProvider
         \App\Repositories\Eloquent\Pharmacy\PharmacyRepository::class => \App\Repositories\Eloquent\Pharmacy\EloquantPharmacyRepository::class,
         \App\Repositories\Eloquent\EventType\EventTypeRepository::class=> \App\Repositories\Eloquent\EventType\EloquantEventTypeRepository::class,
         \App\Repositories\Eloquent\TempleteEvent\TempleteEventRepository::class=> \App\Repositories\Eloquent\TempleteEvent\EloquantTempleteEventRepository::class,
+        \App\Repositories\Eloquent\Event\EventRepository::class=> \App\Repositories\Eloquent\Event\EloquantEventRepository::class,
+        \App\Repositories\Eloquent\EventAttend\EventAttendRepository::class=> \App\Repositories\Eloquent\EventAttend\eloquantEventAttendRepository::class,
 
     ];
 

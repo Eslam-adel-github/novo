@@ -23,11 +23,13 @@
         mounted(){
             axios.get('{{ route('admin.category_faq.all') }}').then((res) => {
                 this.category_faq = res.data.payload;
+                {{--
                 @if ($action != 'edit')
                     if (this.category_faq.length > 0) {
                         this.fData.category_faq_id = this.category_faq[0]['id'];
                     }
                 @endif
+                --}}
             });
         },
         methods: {

@@ -40,7 +40,12 @@
                 <div v-if="errors.has('notes')" class="invalid-feedback">@{{ errors.first('notes') }}</div>
             </div>
         </div>
-        <google-map></google-map>
+        <div class="form-group row">
+            <label class="col-3 col-form-label">{{trans('main.location')}}</label>
+            <div class="col-9">
+                <google-map></google-map>
+            </div>
+        </div>
 
     </div>
 </div>

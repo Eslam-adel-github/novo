@@ -27,6 +27,7 @@
         "@johmun/vue-tags-input": "^2.1.0",
         "object-to-formdata": "^4.1.0",
         "vee-validate": "^2.2.15",
+        "vue-date-pick": "^1.4.1",
         "vue-global-var": "^1.0.0",
         "vue2-google-maps": "^0.10.7"
     }

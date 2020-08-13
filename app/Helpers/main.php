@@ -47,9 +47,13 @@ function UploadImages(string $dir, $image, $checkFunction = null): string
         //         return false;
         //     }
         // }
-
-        $uploadedImage = Image::make($image->getRealPath());
-        $uploadedImage->save(public_path('uploads/' . $dir . '/' . $fileName), '100'); // save the image
+        if (checkImages($extension)) {
+            $uploadedImage = Image::make($image->getRealPath());
+            $uploadedImage->save(public_path('uploads/' . $dir . '/' . $fileName), '100'); // save the image
+        }
+        else {
+            $image->move(public_path('uploads/' . $dir), $fileName);
+        }
 
         $saveImage = $dir . '/' . $fileName; // get the name of the image and the dir that uploaded in
     }
