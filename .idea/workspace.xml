@@ -3,22 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/YoutubeVideoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/YoutubeVideoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/YoutubeVideoRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/YoutubeVideoRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/YoutubeVideo/YoutubeVideo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/YoutubeVideo/YoutubeVideo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/YoutubeVideo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/YoutubeVideo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_faq/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_faq/_partials/_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_library/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_library/_partials/_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/pharmacy/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pharmacy/_partials/_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/_partials/_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/_partials/_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Faq/Faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Faq/Faq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Library/Library.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Library/Library.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public.zip" beforeDir="false" afterPath="$PROJECT_DIR$/public.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.zip" beforeDir="false" afterPath="$PROJECT_DIR$/routes.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor.zip" beforeDir="false" afterPath="$PROJECT_DIR$/vendor.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,7 +414,8 @@
       <workItem from="1597653551528" duration="1683000" />
       <workItem from="1597655524432" duration="1661000" />
       <workItem from="1597657274597" duration="1789000" />
-      <workItem from="1597659107759" duration="1142000" />
+      <workItem from="1597659107759" duration="1802000" />
+      <workItem from="1597663267215" duration="577000" />
     </task>
     <servers />
   </component>

@@ -21,7 +21,7 @@ class Faq extends JsonResource
             "title" => $this->question,
             "description" => $this->description,
             "category" => new CategoryFaq($this->category),
-            "image" => $this->image
+            "image" =>$this->image?"uploads/". $this->image:null
         ];
     }
 }

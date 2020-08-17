@@ -21,7 +21,7 @@ class Library extends JsonResource
             "title" => $this->title,
             "description" => $this->description,
             "category" => new CategoryLibrary($this->category),
-            "image" => $this->image
+            "image" =>$this->image?"uploads/". $this->image:null
         ];
     }
 }

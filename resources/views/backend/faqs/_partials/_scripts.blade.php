@@ -44,14 +44,13 @@
                 this.isLoading = true;
                 $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light").attr("disabled", this.isLoading);
 
-                if($("#owner-club")[0].files.length > 0){
+                if($("#faq")[0].files.length > 0){
                     Helpers.uploadeFile(
-                        [$("#owner-club")[0].files[0]],
+                        [$("#faq")[0].files[0]],
                         'faqs',
                         this.UploadeRoute
                     ).then(images=>{
                         this.fData.image = images[0];
-                        console.log("image is ",images[0])
                         this.submit()
                     }).catch(err=>{
                         this.validation_errors =$validation_errors

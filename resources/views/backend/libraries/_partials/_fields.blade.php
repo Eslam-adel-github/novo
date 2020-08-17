@@ -25,10 +25,16 @@
 
         <div class="form-group row" :class="{'validated' : errors.has('image')}">
             <label class="col-3 col-form-label">{{ __('main.image') }}</label>
-            <div class="col-9">
-                <input type="file"   id="library" class="form-control" :class="{'is-invalid' : errors.has('image')}" name="image" data-vv-as="{{ __('main.image') }}" ref="image" placeholder="{{ __('main.image') }}">
-                <div v-if="errors.has('image')" class="invalid-feedback">@{{ errors.first('image') }}</div>
-                <img style="max-width:400px;" :src="'{{config('app.url')}}/uploads/'+fData.image" alt="">
+            <div class="col-lg-9">
+                <div class="kt-avatar kt-avatar--outline" id="kt_user_avatar_4">
+                    <div class="kt-avatar__holder" style="background-image: url({{asset('/uploads/'. @$edit->image) }})"></div>
+                    <label class="kt-avatar__upload" data-toggle="kt-tooltip" data-original-title="{{trans('main.image')}}">
+                        <i class="fa fa-pen"></i>
+                        <input id='library' type="file" name="image" class="form-control" :class="{'is-invalid' : errors.has('image')}" data-vv-as="{{ __('main.image') }}" ref="image" placeholder="{{ __('main.image') }}" accept=".png, .jpg, .jpeg">
+                    </label>
+                </div>
+                <span class="form-text text-muted">{{ __('main.image') }}</span>
+                <span class="form-text text-muted">{{ __('main.allowed_extensions') }}: .png, .jpg, .jpeg, .svg</span>
             </div>
         </div>
 

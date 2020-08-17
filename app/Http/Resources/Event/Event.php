@@ -23,8 +23,8 @@ class Event extends JsonResource
             'lat'=>$this->latitude,
             'lang'=>$this->longitude,
             'event_date'=>$this->event_date,
-            "image" => 'uploads/'.$this->image,
-            "agenda" => 'uploads/'.$this->image,
+            "image" =>$this->image?"uploads/". $this->image:null,
+            "agenda" =>$this->agenda?"uploads/". $this->agenda:null,
             'address'=>$this->address,
             'number_attendance'=>$this->numberOfAttendance()->count(),
             'user_applied_to_this_event'=>(boolean)$this->userAppliedToThisEvent()->count()
