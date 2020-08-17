@@ -6,8 +6,6 @@
         data: {
             fData: {
                 name: $('input[name=h_name]').val() == '' ? {} : JSON.parse($('input[name=h_name]').val()),
-                hyper_link: '{{ getData($data, 'hyper_link') }}',
-                category_video_id:'{{getData($data,'category_video_id')}}',
                 @if ($action == 'edit')
                     _method: 'PATCH',
                 @endif
@@ -15,33 +13,9 @@
             isLoading: false,
             isLoadingGoogle:false,
             validation_errors: [],
-            is_required:false,
-            category_video:[],
+            is_required:false
         },
-        mounted(){
-            axios.get('{{ route('admin.category_video.all') }}').then((res) => {
-                this.category_video = res.data.payload;
-            });
-        },
-        watch: {
-            "fData.name.en"(new_val) {
-                if(new_val !="") {
-                    this.is_required = true;
-                }
-                else{
-                    this.is_required = false;
-                    delete this.fData.name.en;
-                }
-            },
-            "fData.name.ar"(new_val) {
-                if(new_val !="") {
-                    this.is_required = true;
-                }
-                else{
-                    this.is_required = false;
-                    delete this.fData.name.ar;
-                }
-            },
+        mounted:function(){
         },
         methods: {
             send (status = '') {
@@ -57,25 +31,11 @@
                 this.Save()
             },
             Save(){
-                let name=this.fData.name;
-                //delete this.fData.name
-                if(Array.isArray(name)){
-                    console.log("here1 ",);
-                        this.fData.name.push({
-                            "ar":name['ar'],
-                            "en":name["en"]
-                        })
-                    this.fData.name=this.fData.name[0];
-                        //this.fData.name['en'] = name['en']
-
-                }
-                //console.log(this.fData);
-               // return 0;
                 axios.post('{{ $submitUrl }}', this.fData).then((res) => {
                     if (res.data.success) {
                         swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
                         setTimeout(() => {
-                            window.location = "{{ route("admin.youtube_video.index") }}";
+                            window.location = "{{ route("admin.category_video.index") }}";
                         }, 1000)
                     }
                     this.isLoading = false;

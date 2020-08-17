@@ -20,8 +20,9 @@ Route::get('/user/profile','UserController@profile')->name('user.profile');
 Route::patch('/user/update_profile','UserController@updateProfile')->name('user.profile');
 Route::post('/user/change_password','UserController@change_password')->name('user.change_password');
 
-Route::get('/get_youtube_video_hyper_link','YoutubeVideoController')->name('youtube.video.hyper_link');
+Route::get('/get_youtube_video_hyper_link','YoutubeVideoController@index')->name('youtube.video.hyper_link');
 Route::get('/get_rethink_obesity_hyper_link','RethinkObesityController')->name('youtube.video.hyper_link');
+Route::get('/get_youtube_video_hyper_link_by_category/{category_id}','YoutubeVideoController@videoByCategory')->name('youtube.video.hyper_link_by_category_id');
 
 Route::get('/get_all_library','LibraryController@index')->name('get.library');
 Route::get('/get_library_by_id/{id}','LibraryController@show')->name('get.library.by.id');
@@ -35,3 +36,6 @@ Route::post('/attend_event','EventController@attendEvent')->name('attend_event')
 Route::get('/get_events_by_callender','EventController@getEventsByCallender')->name('get.event_by_callender');
 
 Route::post('/images','ImageController@store')->name('uploade.image');
+
+Route::get('/get_youtube_video_category','CategoryVideoController')->name('category_video');
+

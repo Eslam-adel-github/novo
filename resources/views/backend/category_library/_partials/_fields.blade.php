@@ -6,7 +6,7 @@
             <label class="col-3 col-form-label">{{ __('main.name') }} (@{{ lang }})</label>
             <div class="col-9">
                 <input  type="text" class="form-control" v-model="fData.name[lang]" :name="'name-' + lang" :id="'name-' + lang" :class="{'is-invalid' : errors.has('name-' + lang)}" v-validate="'required'"   data-vv-as="{{ __('main.name') }}" v-model="fData.name" :placeholder="'{{ __('main.name') }} ' + '(' + lang + ')'">
-                <div v-if="errors.has('name-' + lang)" class="invalid-feedback">@{{ errors.first('name') }}</div>
+                <div v-if="errors.has('name-' + lang)" class="invalid-feedback">@{{ errors.first('name-'+lang) }}</div>
             </div>
         </div>
     </div>

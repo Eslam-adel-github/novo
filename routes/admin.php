@@ -27,6 +27,12 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
     Route::get('/events_type_all', 'SAC\GetAllEventType')->name('events_type.all');
     Route::get('/templete_events_all', 'SAC\GetAllTempleteEvents')->name('templete_events.all');
     Route::get('/templete_event_single/{parameter}', 'SAC\GetSingleTempleteEvent')->name('get_templete_event.single');
+
+    Route::resource('/category_video', 'Resource\CategoryVideoController');
+
+    Route::get('/category_video_all', 'SAC\GetAllCategoryVideo')->name('category_video.all');
+
+
     //Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');
 
 

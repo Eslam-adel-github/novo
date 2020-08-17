@@ -6,17 +6,22 @@
         @slot('title')
             {{  $title }}
         @endslot
+        <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
+        <span class="kt-subheader__breadcrumbs-separator"></span>
+        <a href="{{ route('admin.category_video.index') }}" class="kt-subheader__breadcrumbs-link">
+            {{ __('main.categories') }} {{ __('main.video') }}
+        </a>
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.youtube_video.edit', [$show->id]) }}" class="kt-nav__link">
+                <a href="{{ route('admin.category_video.edit', [$show->id]) }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-edit"></i>
-                    <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.youtube_video_hyper_link') }}</span>
+                    <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.category') }} {{ __('main.video') }}</span>
                 </a>
             </li>
             <li class="kt-nav__item">
-                <a href="{{ route('admin.youtube_video.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.category_video.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
-                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.youtube_video_hyper_link') }}</span>
+                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.categories') }} {{ __('main.video') }}</span>
                 </a>
             </li>
         @endslot
@@ -40,18 +45,6 @@
                             <strong>{{ __('main.name') }}: </strong>
                             {{ VarByLang(getData(collect($show),"name")) }}
                             <hr>
-                        </div>
-                        <div class="col-md-6">
-                            <strong>{{ __('main.hyper_link') }}: </strong>
-                            <a target="_blank" href="{{ $show->hyper_link }}">Hyper Link</a>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <strong>{{ __('main.category') }}: </strong>
-                            {{ $show->category ?  VarByLang(getData(collect($show->category),"name")) : ''}}
-                            <br><hr>
                         </div>
                         <div class="col-md-6">
                             <strong>{{ __('main.created_at') }}: </strong>

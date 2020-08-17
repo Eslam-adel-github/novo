@@ -17,9 +17,15 @@ class YoutubeVideoController extends Controller
      * Handle the incoming request.
      * @return \Illuminate\Http\Response
      */
-    public function __invoke()
+    public function index()
     {
         $data=$this->repository->instance()->orderBy("id","desc")->paginate();;
         return $this->apiResponse(new YoutubeVideoCollection($data), true, 200);
     }
+    public function videoByCategory($category_id)
+    {
+        $data=$this->repository->instance()->where('category_video_id',$category_id)->orderBy("id","desc")->paginate();;
+        return $this->apiResponse(new YoutubeVideoCollection($data), true, 200);
+    }
+
 }

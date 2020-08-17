@@ -50,6 +50,12 @@
                 <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
                     <ul class="kt-menu__subnav">
                         <li class="kt-menu__item " aria-haspopup="true">
+                            <a href="{{ route('admin.category_video.index') }}" class="kt-menu__link">
+                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                <span class="kt-menu__link-text">{{ trans('main.categories') }} {{ trans('main.video') }} </span>
+                            </a>
+                        </li>
+                        <li class="kt-menu__item " aria-haspopup="true">
                             <a href="{{ route('admin.category_common_faq.index') }}" class="kt-menu__link">
                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
                                 <span class="kt-menu__link-text">{{ trans('main.categories') }} {{ trans('main.common_faq') }}</span>

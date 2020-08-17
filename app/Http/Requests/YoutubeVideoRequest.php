@@ -22,6 +22,7 @@ class YoutubeVideoRequest extends FormRequest
         $rules = [
             'name' => ['nullable', 'max:255'],
             'hyper_link' => ['required', 'string',"url"],
+            'category_video_id'=>['required','exists:category_videos,id']
         ];
 
         return $rules;
@@ -32,6 +33,7 @@ class YoutubeVideoRequest extends FormRequest
         return [
             'name'  =>  trans('main.name'),
             'hyper_link'  =>  trans('main.hyper_link'),
+            'category_video_id'=>trans('main.category')
         ];
     }
 }

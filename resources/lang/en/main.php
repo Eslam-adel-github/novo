@@ -111,5 +111,6 @@ return [
     'event_date'                     =>"Event Date",
     'allowed_extensions'             =>"Allowed Extensions",
     'no_agenda_uploaded'             =>"No Agenda Uploaded",
-    'no_image_uploaded'             =>"No Image Uploaded"
+    'no_image_uploaded'             =>"No Image Uploaded",
+    'video'                         =>"Video"
 ];
