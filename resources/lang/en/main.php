@@ -144,7 +144,8 @@ return [
     'category_common_faq'=>"Category Common Faq",
     'calendar'=>"Calendar",
     'attendance'=>"Attendance",
-    'no_participation'=>"No Participation"
+    'no_participation'=>"No Participation",
+    'profile'=>"Profile"
 
 
 ];
