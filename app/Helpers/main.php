@@ -254,14 +254,16 @@ function getAppRoutes()
     $routes = [];
 
     foreach (\Route::getRoutes()->getIterator() as $route) {
-        if (isset($route->action['as'])) {
-            $exploded = explode('.', $route->action['as']);
 
-            if (isset($exploded[1]) && in_array($exploded[1], ['create', 'index'])) {
+        if (isset($route->action['as'])) {
+            //$routes[] = $route->action['as'];
+            $exploded = explode('.', $route->action['as']);
+            if (isset($exploded[2]) && in_array($exploded[2], ['create', 'index'])) {
                 $routes[] = $route;
             }
         }
     }
+    //dd($routes);
 
     return $routes;
 }

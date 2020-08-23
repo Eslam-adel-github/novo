@@ -46,7 +46,7 @@ class UsersRequest extends FormRequest
                 $rules['email'] = 'required|unique:users,email,'.Auth::user()->id.',id';
                 $rules['phone'] = 'required|unique:users,phone,'.Auth::user()->id.',id';
             }
-            $rules['password'] = 'sometimes|nullable|min:6';
+            $rules['password'] = 'sometimes|nullable|min:8|confirmed';
         }
 
         return $rules;

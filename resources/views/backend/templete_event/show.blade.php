@@ -95,6 +95,12 @@
                                                 <span class="kt-widget1__desc">{{ VarByLang(getData(collect($show),"address")) }}</span>
                                             </div>
                                         </div>
+                                        <div class="kt-widget1__item">
+                                            <div class="kt-widget1__info">
+                                                <h3 class="kt-widget1__title">{{ __("main.participations") }}:</h3>
+                                                <span class="kt-widget1__desc">{{$show->participation}}</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

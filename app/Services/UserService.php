@@ -45,7 +45,7 @@ class UserService
         $data = $request->all();
 
         if ($request->has('password') && checkVar($request->password)) {
-            $data['password'] = Hash::make($request->password);
+            $data['password'] = \Illuminate\Support\Facades\Hash::make($request->password);
         } else {
             unset($data['password']);
         }

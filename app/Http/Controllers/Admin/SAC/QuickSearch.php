@@ -18,15 +18,12 @@ class QuickSearch extends Controller
     public function __invoke(Request $request) : View
     {
         $query = trim($request->only('query')['query']);
-
         $routes = [];
 
         foreach (getAppRoutes() as $route) {
             $routes[] = $route->action['as'];
         }
-
         $results  = preg_grep('/'.$query.'/i', $routes);
-
         return view('backend.layout.partials.header-topbar.partials._quick_search_results', [
             'results' => $results
         ]);

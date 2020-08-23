@@ -32,6 +32,14 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
 
     Route::get('/category_video_all', 'SAC\GetAllCategoryVideo')->name('category_video.all');
 
+    Route::get("faq_library_cards","SAC\FaqAndLibraryCards")->name('faq_library.cards');
+    Route::get("events_cards","SAC\EventsCards")->name('events.cards');
+    Route::get("hcp_pharmacy_cards","SAC\HCPAndPharamcyCards")->name('hcp_pharmacy.cards');
+    Route::get("video_cards","SAC\VideoCards")->name('video.cards');
+
+    Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');
+    Route::get('calendar', 'SAC\Calendar')->name("calendar");
+
 
     //Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');
 

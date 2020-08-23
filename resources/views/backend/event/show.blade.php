@@ -97,6 +97,12 @@
                                                 <span class="kt-widget1__desc">{{ VarByLang(getData(collect($show),"address")) }}</span>
                                             </div>
                                         </div>
+                                        <div class="kt-widget1__item">
+                                            <div class="kt-widget1__info">
+                                                <h3 class="kt-widget1__title">{{ __("main.participations") }}:</h3>
+                                                <span class="kt-widget1__desc">{{$show->participation}}</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-4">
                         <div class="kt-portlet kt-portlet--height-fluid">
                             <div class="kt-portlet__head">
                                 <div class="kt-portlet__head-label">
@@ -164,6 +170,32 @@
                                             </table>
                                         @else
                                             {{trans('main.no_agenda_uploaded')}}
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="kt-portlet kt-portlet--height-fluid">
+                            <div class="kt-portlet__head">
+                                <div class="kt-portlet__head-label">
+                                    <h3 class="kt-portlet__head-title">
+                                        {{ __('main.attendance') }}
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="kt-portlet__body">
+                                <div class="kt-portlet__head-toolbar">
+                                    <div class="dropdown dropdown-inline">
+                                        @if($show->numberOfAttendance()->count()>0)
+                                            <h3 style="text-align: center">
+                                                <i class="fa fa-user"></i> {{$show->numberOfAttendance()->count()}}
+                                            </h3>
+                                        @else
+                                            <p style="text-align: center">
+                                                {{trans('main.no_participation')}}
+                                            </p>
                                         @endif
                                     </div>
                                 </div>

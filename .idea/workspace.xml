@@ -3,16 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Faq/Faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Faq/Faq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Library/Library.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Library/Library.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public.zip" beforeDir="false" afterPath="$PROJECT_DIR$/public.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.zip" beforeDir="false" afterPath="$PROJECT_DIR$/routes.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor.zip" beforeDir="false" afterPath="$PROJECT_DIR$/vendor.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SAC/QuickSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SAC/QuickSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UsersRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UsersRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/dist/assets/js/scripts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/dist/assets/js/scripts.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_quick_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_quick_actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_quick_search_results.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_quick_search_results.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_user_bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_user_bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/_partials/_scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,20 +175,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/event" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Resources\YoutubeVideo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\event" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\Cards" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\app\DataTables" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\app\Helpers" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js\components" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Controllers\Admin\SAC" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Resources\YoutubeVideo" />
     </key>
   </component>
   <component name="RunManager">
@@ -415,7 +419,23 @@
       <workItem from="1597655524432" duration="1661000" />
       <workItem from="1597657274597" duration="1789000" />
       <workItem from="1597659107759" duration="1802000" />
-      <workItem from="1597663267215" duration="577000" />
+      <workItem from="1597663267215" duration="1280000" />
+      <workItem from="1597669242671" duration="1177000" />
+      <workItem from="1597671241455" duration="595000" />
+      <workItem from="1597673049678" duration="595000" />
+      <workItem from="1597675947381" duration="839000" />
+      <workItem from="1597677763567" duration="595000" />
+      <workItem from="1597679586327" duration="660000" />
+      <workItem from="1598170017973" duration="1358000" />
+      <workItem from="1598171408261" duration="1990000" />
+      <workItem from="1598173460463" duration="1570000" />
+      <workItem from="1598175321476" duration="1755000" />
+      <workItem from="1598177296313" duration="1607000" />
+      <workItem from="1598179094687" duration="1785000" />
+      <workItem from="1598180921569" duration="1773000" />
+      <workItem from="1598182746461" duration="1550000" />
+      <workItem from="1598186905405" duration="1378000" />
+      <workItem from="1598191155609" duration="1435000" />
     </task>
     <servers />
   </component>
@@ -423,14 +443,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597658056083">
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598173505581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1597658056083" />
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597660227106">
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1598173505581" />
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598187380444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597660227106" />
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598187380444" />
     <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1597243081519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -447,14 +467,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594571780118" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597659157928">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1598191564210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597659157928" />
-    <state x="390" y="125" width="800" height="478" key="find.popup" timestamp="1597053123612">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1598191564210" />
+    <state x="390" y="125" width="800" height="478" key="find.popup" timestamp="1598181146114">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="125" width="800" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597053123612" />
+    <state x="390" y="125" width="800" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598181146114" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1598171673478">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1598171673478" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

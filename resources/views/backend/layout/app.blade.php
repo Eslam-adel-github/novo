@@ -269,7 +269,7 @@
 		<!--begin::Page Scripts(used by this page) -->
 		@yield('js_scripts')
 		<!--end::Page Scripts -->
-        @livewireScripts
+
 
 	</body>
 

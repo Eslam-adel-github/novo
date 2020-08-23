@@ -9,7 +9,7 @@
                     <div class="kt-quick-search__item-wrapper">
                         <a href="{{ route($route) }}" class="kt-quick-search__item-title">
                             @php
-                                foreach (array_reverse(explode('.', $route)) as $r) {
+                                foreach (array_reverse(explode('.', $route)) as $key=>$r) {
                                     echo __("main.$r") . ' ';
                                 }
                             @endphp

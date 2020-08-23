@@ -13,8 +13,8 @@
                 password: '',
                 password_confirmation: '',
                 gender:'{{ getData($data, 'gender') }}',
-                type:2,
                 from:"web",
+                type:'',
                 @if ($action == 'edit')
                     _method: 'PATCH',
                 @endif
@@ -23,6 +23,11 @@
             validation_errors: [],
         },
         mounted:function(){
+            @if($action=='edit')
+                this.fData.type='{{ getData($data, 'type') }}'
+            @else
+                this.fData.type=2;
+            @endif
         },
 
         methods: {
@@ -41,13 +46,19 @@
                 this.submit()
             },
             submit(){
-
                 axios.post('{{ $submitUrl }}', this.fData).then((res) => {
                     if (res.data.success) {
-                        swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
-                        setTimeout(() => {
-                            window.location = "{{ route('admin.users.index') }}";
-                        }, 1000)
+                        @if(request()->filled('profile'))
+                            swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
+                            setTimeout(() => {
+                                window.location = "{{ route('admin.users.edit', [auth()->id()]) }}?profile=yes";
+                            }, 1000)
+                        @else
+                            swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
+                            setTimeout(() => {
+                                window.location = "{{route('admin.users.index')}}";
+                            }, 1000)
+                        @endif
                     }
                     this.isLoading = false;
                     $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand").attr("disabled", this.isLoading);

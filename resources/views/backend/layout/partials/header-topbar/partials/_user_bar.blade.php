@@ -26,6 +26,26 @@
 
         <!--begin: Navigation -->
         <div class="kt-notification">
+            <a href="{{ route('admin.users.edit', [auth()->id()]) }}?profile=yes" class="kt-notification__item">
+                <div class="kt-notification__item-icon">
+                    <i class="flaticon2-calendar-3 kt-font-success"></i>
+                </div>
+                <div class="kt-notification__item-details">
+                    <div class="kt-notification__item-title kt-font-bold">
+                        {{ __('main.profile') }}
+                    </div>
+                </div>
+            </a>
+            <a href="{{ aurl('/calendar') }}" class="kt-notification__item">
+                <div class="kt-notification__item-icon">
+                    <i class="flaticon2-calendar kt-font-warning"></i>
+                </div>
+                <div class="kt-notification__item-details">
+                    <div class="kt-notification__item-title kt-font-bold">
+                        {{ __('main.calendar') }}
+                    </div>
+                </div>
+            </a>
 
             <div class="kt-notification__custom kt-space-between">
                 <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
