@@ -222,8 +222,15 @@
 
 		<!--begin::Global Theme Bundle(used by all pages) -->
         <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+        
+        
+        
         <script src="{{ asset('backend/dist/assets/plugins/global/plugins.bundle.js') }}" type="text/javascript"></script>
+        
         <script src="{{ asset('backend/dist/assets/js/scripts.bundle.js') }}" type="text/javascript"></script>
+         <script src="{{ asset('backend/dist/assets/js/test.bundle.js') }}" type="text/javascript"></script>
+        
+        
         <script src="{{ asset('backend/shared/js/vue.min.js') }}" type="text/javascript"></script>
         <script src="{{ asset('backend/shared/js/helpers.js') }}" type="text/javascript"></script>
 
