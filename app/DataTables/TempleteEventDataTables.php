@@ -107,7 +107,7 @@ class TempleteEventDataTables extends DataTable
             ->columns($this->getColumns())
             ->minifiedAjax()
             ->buttons($this->getButtons())
-            ->parameters($this->getCustomBuilderParameters([1, 2,3], [], GetLanguage() == 'ar'));
+            ->parameters($this->getCustomBuilderParameters([1, 2], [], GetLanguage() == 'ar'));
     }
 
     /**

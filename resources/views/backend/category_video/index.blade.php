@@ -12,11 +12,11 @@
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
         <a href="{{ route('admin.category_video.index') }}" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.categories') }} {{__('main.video')}}
+            {{ __('main.videos_groups') }}
         </a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
         <a href="#" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.show-all') }}  {{ __('main.categories') }} {{__('main.video')}}
+            {{ __('main.show-all') }}  {{ __('main.video_group') }}
         </a>
     @endcomponent
 @endsection

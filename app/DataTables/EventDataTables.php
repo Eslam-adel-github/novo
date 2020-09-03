@@ -108,7 +108,7 @@ class EventDataTables extends DataTable
             ->columns($this->getColumns())
             ->minifiedAjax()
             ->buttons($this->getButtons())
-            ->parameters($this->getCustomBuilderParameters([1, 2,3], [], GetLanguage() == 'ar'));
+            ->parameters($this->getCustomBuilderParameters([1, 2], [], GetLanguage() == 'ar'));
     }
 
     /**
@@ -120,7 +120,7 @@ class EventDataTables extends DataTable
     {
         return [
             Column::computed('checkbox', $this->getTitleCheckboxHtml())->width(15)->printable(false),
-            Column::make('event_name', 'event_name')->title(trans('main.name')),
+            Column::make('event_name', 'event_name')->title(trans('main.name')." (en)"),
             Column::make('event_date', 'event_date')->title(trans('main.event_date')),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];

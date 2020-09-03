@@ -42,8 +42,20 @@
                 <div class="kt-portlet__body">
                     <div class="row">
                         <div class="col-md-6">
-                            <strong>{{ __('main.name') }}: </strong>
+                            <strong>{{ __('main.name') }} (en): </strong>
                             {{ VarByLang(getData(collect($show),"name")) }}
+                            <hr>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>{{ __('main.name') }} (ar): </strong>
+                            {{ VarByLang(getData(collect($show),"name"),"ar") }}
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>{{ __('main.updated_at') }}: </strong>
+                            {{ $show->updated_at }}
                             <hr>
                         </div>
                         <div class="col-md-6">

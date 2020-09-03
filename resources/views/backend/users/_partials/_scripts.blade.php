@@ -1,8 +1,8 @@
 <script>
-    $(".deleteBtn").on('click',(e)=>{
+    $(".deleteBtn").on('click', (e) => {
         e.preventDefault()
         //console.log(e)
-    })
+    });
     var vue = new Vue({
         el: '#kt_page_portlet',
         data: {
@@ -12,26 +12,26 @@
                 phone: '{{ getData($data, 'phone') }}',
                 password: '',
                 password_confirmation: '',
-                gender:'{{ getData($data, 'gender') }}',
-                from:"web",
-                type:'',
+                gender: '{{ getData($data, 'gender') }}',
+                from: "web",
+                type: '',
                 @if ($action == 'edit')
-                    _method: 'PATCH',
+                _method: 'PATCH',
                 @endif
             },
             isLoading: false,
             validation_errors: [],
         },
-        mounted:function(){
+        mounted: function () {
             @if($action=='edit')
-                this.fData.type='{{ getData($data, 'type') }}'
+                this.fData.type = '{{ getData($data, 'type') }}';
             @else
-                this.fData.type=2;
+                this.fData.type = 2;
             @endif
         },
 
         methods: {
-            send (status = '') {
+            send(status = '') {
 
                 this.$validator.validateAll().then((result) => {
                     if (result) {
@@ -40,24 +40,39 @@
                 });
                 //this.submitForm(status);
             },
-            submitForm (status) {
+            submitForm(status) {
                 this.isLoading = true;
                 $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light").attr("disabled", this.isLoading);
-                this.submit()
+                this.submit(status)
             },
-            submit(){
+            submit(status) {
                 axios.post('{{ $submitUrl }}', this.fData).then((res) => {
                     if (res.data.success) {
                         @if(request()->filled('profile'))
-                            swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
-                            setTimeout(() => {
-                                window.location = "{{ route('admin.users.edit', [auth()->id()]) }}?profile=yes";
-                            }, 1000)
+                        swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
+                        setTimeout(() => {
+                            window.location = "{{ route('admin.users.edit', [auth()->id()]) }}?profile=yes";
+                        }, 1000);
                         @else
-                            swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
+                        swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
+
+                        if (status == '') {
                             setTimeout(() => {
-                                window.location = "{{route('admin.users.index')}}";
+                                window.location = "{{ route("admin.users.index") }}";
                             }, 1000)
+
+                        } else if (status == "continue") {
+                            setTimeout(() => {
+                                window.location = "{{ route("admin.users.create") }}";
+                            }, 1000)
+
+                        } else {
+                            var url = '{{ route("admin.users.show", ":id") }}';
+                            url = url.replace(':id', res.data.payload.id);
+                            setTimeout(() => {
+                                window.location = url;
+                            }, 1000)
+                        }
                         @endif
                     }
                     this.isLoading = false;

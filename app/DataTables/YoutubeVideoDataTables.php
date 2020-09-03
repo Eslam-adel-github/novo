@@ -26,6 +26,9 @@ class YoutubeVideoDataTables extends DataTable
             ->editColumn('name', function (YoutubeVideo $model) {
                 return VarByLang(getData(collect($model),"name"));
             })
+            ->editColumn('hyper_link', function (YoutubeVideo $model) {
+                return substr($model->hyper_link,0,30);
+            })
             ->editColumn('checkbox', $this->getColumnCheckboxHtml())
             ->editColumn('created_at',function ($model){
                 return date("Y-m-d",strtotime($model->created_at));
@@ -105,7 +108,7 @@ class YoutubeVideoDataTables extends DataTable
             ->columns($this->getColumns())
             ->minifiedAjax()
             ->buttons($this->getButtons())
-            ->parameters($this->getCustomBuilderParameters([1, 2,3, 4], [], GetLanguage() == 'ar'));
+            ->parameters($this->getCustomBuilderParameters([1, 2,3], [], GetLanguage() == 'ar'));
     }
 
     /**
@@ -117,7 +120,7 @@ class YoutubeVideoDataTables extends DataTable
     {
         return [
             Column::computed('checkbox', $this->getTitleCheckboxHtml())->width(15)->printable(false),
-            Column::make('name', 'name')->title(trans('main.name')),
+            Column::make('name', 'name')->title(trans('main.name')." (en)"),
             Column::make('hyper_link', 'hyper_link')->title(trans('main.hyper_link')),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),

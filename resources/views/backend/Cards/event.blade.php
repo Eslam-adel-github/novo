@@ -35,7 +35,7 @@
                                         <a class="kt-link" href="{{ route('admin.event.index') }}">{{ trans("main.events") }}</a>
                                     </h3>
                                     <div class="kt-iconbox__content">
-                                        {{ __('main.event_description') }}
+                                        {{ __('main.event_description_quick_action') }}
                                     </div>
                                 </div>
                             </div>

@@ -49,9 +49,17 @@
                                     <div class="kt-widget1">
                                         <div class="kt-widget1__item">
                                             <div class="kt-widget1__info">
-                                                <h3 class="kt-widget1__title">{{ __("main.event_name") }}</h3>
+                                                <h3 class="kt-widget1__title">{{ __("main.event_name") }}(en)</h3>
                                                 <span class="kt-widget1__desc">
                                                     {{ VarByLang(getData(collect($show),"event_name")) }}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="kt-widget1__item">
+                                            <div class="kt-widget1__info">
+                                                <h3 class="kt-widget1__title">{{ __("main.event_name") }} (ar)</h3>
+                                                <span class="kt-widget1__desc">
+                                                    {{ VarByLang(getData(collect($show),"event_name"),"ar") }}
                                                 </span>
                                             </div>
                                         </div>
@@ -59,8 +67,16 @@
                                     <div class="kt-widget1">
                                         <div class="kt-widget1__item">
                                             <div class="kt-widget1__info">
-                                                <h3 class="kt-widget1__title">{{ __("main.event_name") }}</h3>
+                                                <h3 class="kt-widget1__title">{{ __("main.event_name") }} (en)</h3>
                                                 <span class="kt-widget1__desc">{{ VarByLang(getData(collect($show),"event_name")) }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kt-widget1">
+                                        <div class="kt-widget1__item">
+                                            <div class="kt-widget1__info">
+                                                <h3 class="kt-widget1__title">{{ __("main.event_name") }} (ar)</h3>
+                                                <span class="kt-widget1__desc">{{ VarByLang(getData(collect($show),"event_name"),"ar") }}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -69,9 +85,9 @@
                                     <div class="kt-widget1">
                                         <div class="kt-widget1__item">
                                             <div class="kt-widget1__info">
-                                                <h3 class="kt-widget1__title">{{ __("main.event_description") }}</h3>
+                                                <h3 class="kt-widget1__title">{{ __("main.event_description") }} (en)</h3>
                                                 <span class="kt-widget1__desc">
-                                                    <a href="" class="kt-widget__username">
+                                                    <a  class="kt-widget__username">
                                                         {{ VarByLang(getData(collect($show),"event_description")) }}
                                                     </a>
                                                 </span>
@@ -79,8 +95,25 @@
                                         </div>
                                         <div class="kt-widget1__item">
                                             <div class="kt-widget1__info">
-                                                <h3 class="kt-widget1__title">{{ __("main.event_type") }}:</h3>
+                                                <h3 class="kt-widget1__title">{{ __("main.event_description") }} (ar)</h3>
+                                                <span class="kt-widget1__desc">
+                                                    <a  class="kt-widget__username">
+                                                        {{ VarByLang(getData(collect($show),"event_description"),"ar") }}
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="kt-widget1__item">
+                                            <div class="kt-widget1__info">
+                                                <h3 class="kt-widget1__title">{{ __("main.event_type") }} (en):</h3>
                                                 <span class="kt-widget1__desc">{{ $show->eventType?VarByLang(getData(collect($show->eventType),"name")):"" }}</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget1__item">
+                                            <div class="kt-widget1__info">
+                                                <h3 class="kt-widget1__title">{{ __("main.event_type") }} (ar):</h3>
+                                                <span class="kt-widget1__desc">{{ $show->eventType?VarByLang(getData(collect($show->eventType),"name"),"ar"):"" }}</span>
                                             </div>
                                         </div>
 
@@ -93,8 +126,14 @@
 
                                         <div class="kt-widget1__item">
                                             <div class="kt-widget1__info">
-                                                <h3 class="kt-widget1__title">{{ __("main.address") }}:</h3>
+                                                <h3 class="kt-widget1__title">{{ __("main.address") }} (en):</h3>
                                                 <span class="kt-widget1__desc">{{ VarByLang(getData(collect($show),"address")) }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="kt-widget1__item">
+                                            <div class="kt-widget1__info">
+                                                <h3 class="kt-widget1__title">{{ __("main.address") }} (ar):</h3>
+                                                <span class="kt-widget1__desc">{{ VarByLang(getData(collect($show),"address"),"ar") }}</span>
                                             </div>
                                         </div>
                                         <div class="kt-widget1__item">

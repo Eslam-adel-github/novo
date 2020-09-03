@@ -104,7 +104,7 @@ class CategoryFaqDataTables extends DataTable
             ->columns($this->getColumns())
             ->minifiedAjax()
             ->buttons($this->getButtons())
-            ->parameters($this->getCustomBuilderParameters([1, 2, 3], [], GetLanguage() == 'ar'));
+            ->parameters($this->getCustomBuilderParameters([1, 2], [], GetLanguage() == 'ar'));
     }
 
     /**
@@ -116,7 +116,7 @@ class CategoryFaqDataTables extends DataTable
     {
         return [
             Column::computed('checkbox', $this->getTitleCheckboxHtml())->width(15)->printable(false),
-            Column::make('name', 'name')->title(trans('main.name')),
+            Column::make('name', 'name')->title(trans('main.name')." (en)"),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];

@@ -49,9 +49,15 @@
             <div class="dropdown-menu dropdown-menu-right">
                 <ul class="kt-nav">
                     <li class="kt-nav__item">
-                        <a href="#" @click.prevent="send()" class="kt-nav__link" >
+                        <a href="#" @click.prevent="send('continue')" class="kt-nav__link">
                             <i class="kt-nav__link-icon flaticon2-reload"></i>
                             <span class="kt-nav__link-text">{{ __("main.save_and_continue") }}</span>
+                        </a>
+                    </li>
+                    <li class="kt-nav__item">
+                        <a href="#" @click.prevent="send('show')" class="kt-nav__link">
+                            <i class="kt-nav__link-icon flaticon2-reload"></i>
+                            <span class="kt-nav__link-text">{{ __("main.save_and_show") }}</span>
                         </a>
                     </li>
                 </ul>

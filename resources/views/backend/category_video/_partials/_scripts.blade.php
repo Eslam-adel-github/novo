@@ -7,36 +7,50 @@
             fData: {
                 name: $('input[name=h_name]').val() == '' ? {} : JSON.parse($('input[name=h_name]').val()),
                 @if ($action == 'edit')
-                    _method: 'PATCH',
+                _method: 'PATCH',
                 @endif
             },
             isLoading: false,
-            isLoadingGoogle:false,
+            isLoadingGoogle: false,
             validation_errors: [],
-            is_required:false
+            is_required: false
         },
-        mounted:function(){
+        mounted: function () {
         },
         methods: {
-            send (status = '') {
+            send(status = '') {
                 this.$validator.validateAll().then((result) => {
                     if (result) {
                         this.submitForm(status);
                     }
                 });
             },
-            submitForm (status) {
+            submitForm(status) {
                 this.isLoading = true;
                 $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light").attr("disabled", this.isLoading);
-                this.Save()
+                this.Save(status)
             },
-            Save(){
+            Save(status) {
                 axios.post('{{ $submitUrl }}', this.fData).then((res) => {
+                    swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
                     if (res.data.success) {
-                        swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
-                        setTimeout(() => {
-                            window.location = "{{ route("admin.category_video.index") }}";
-                        }, 1000)
+                        if (status == '') {
+                            setTimeout(() => {
+                                window.location = "{{ route("admin.category_video.index") }}";
+                            }, 1000)
+
+                        } else if (status == "continue") {
+                            setTimeout(() => {
+                                window.location = "{{ route("admin.category_video.create") }}";
+                            }, 1000)
+
+                        } else {
+                            var url = '{{ route("admin.category_video.show", ":id") }}';
+                            url = url.replace(':id', res.data.payload.id);
+                            setTimeout(() => {
+                                window.location = url;
+                            }, 1000)
+                        }
                     }
                     this.isLoading = false;
                     $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand").attr("disabled", this.isLoading);

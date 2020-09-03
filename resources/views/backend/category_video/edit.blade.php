@@ -14,13 +14,13 @@
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
         <a href="{{ route('admin.category_video.index') }}" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.categories') }} {{ __('main.video') }}
+            {{ __('main.videos_groups') }}
         </a>
         @slot('toolbar')
             <li class="kt-nav__item">
                 <a href="{{ route('admin.category_video.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
-                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{__('main.categories')}} {{__('main.video')}}</span>
+                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{__('main.video_group')}}</span>
                 </a>
             </li>
         @endslot
@@ -48,9 +48,15 @@
             <div class="dropdown-menu dropdown-menu-right">
                 <ul class="kt-nav">
                     <li class="kt-nav__item">
-                        <a href="#" @click.prevent="send()" class="kt-nav__link">
+                        <a href="#" @click.prevent="send('continue')" class="kt-nav__link">
                             <i class="kt-nav__link-icon flaticon2-reload"></i>
                             <span class="kt-nav__link-text">{{ __("main.save_and_continue") }}</span>
+                        </a>
+                    </li>
+                    <li class="kt-nav__item">
+                        <a href="#" @click.prevent="send('show')" class="kt-nav__link">
+                            <i class="kt-nav__link-icon flaticon2-reload"></i>
+                            <span class="kt-nav__link-text">{{ __("main.save_and_show") }}</span>
                         </a>
                     </li>
                 </ul>

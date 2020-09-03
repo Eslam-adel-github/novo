@@ -9,19 +9,19 @@
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
         <a href="{{ route('admin.category_video.index') }}" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.categories') }} {{ __('main.video') }}
+            {{ __('main.videos_groups') }}
         </a>
         @slot('toolbar')
             <li class="kt-nav__item">
                 <a href="{{ route('admin.category_video.edit', [$show->id]) }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-edit"></i>
-                    <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.category') }} {{ __('main.video') }}</span>
+                    <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.video_group') }}</span>
                 </a>
             </li>
             <li class="kt-nav__item">
                 <a href="{{ route('admin.category_video.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
-                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.categories') }} {{ __('main.video') }}</span>
+                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.video_group') }}</span>
                 </a>
             </li>
         @endslot
@@ -42,13 +42,23 @@
                 <div class="kt-portlet__body">
                     <div class="row">
                         <div class="col-md-6">
-                            <strong>{{ __('main.name') }}: </strong>
-                            {{ VarByLang(getData(collect($show),"name")) }}
+                            <strong>{{ __('main.name') }} (en) : </strong>
+                            {{ VarByLang(getData(collect($show),"name"),"en") }}
+                            <hr>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>{{ __('main.name') }} (ar) : </strong>
+                            {{ VarByLang(getData(collect($show),"name"),"ar") }}
                             <hr>
                         </div>
                         <div class="col-md-6">
                             <strong>{{ __('main.created_at') }}: </strong>
                             {{ $show->created_at }}
+                            <hr>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>{{ __('main.updated_at') }}: </strong>
+                            {{ $show->updated_at }}
                             <hr>
                         </div>
                     </div>

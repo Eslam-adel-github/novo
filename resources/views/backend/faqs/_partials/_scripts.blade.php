@@ -51,23 +51,37 @@
                         this.UploadeRoute
                     ).then(images=>{
                         this.fData.image = images[0];
-                        this.submit()
+                        this.submit(status)
                     }).catch(err=>{
                         this.validation_errors =$validation_errors
                         this.isLoading = false;
                         $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand").attr("disabled", this.isLoading);
                     })
                 }else{
-                    this.submit()
+                    this.submit(status)
                 }
             },
-            submit(){
+            submit(status){
                 axios.post('{{ $submitUrl }}', this.fData).then((res) => {
                     if (res.data.success) {
                         swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
-                        setTimeout(() => {
-                            window.location = "{{ route('admin.faq.index') }}";
-                        }, 1000)
+                        if (status == '') {
+                            setTimeout(() => {
+                                window.location = "{{ route("admin.faq.index") }}";
+                            }, 1000)
+
+                        } else if (status == "continue") {
+                            setTimeout(() => {
+                                window.location = "{{ route("admin.faq.create") }}";
+                            }, 1000)
+
+                        } else {
+                            var url = '{{ route("admin.faq.show", ":id") }}';
+                            url = url.replace(':id', res.data.payload.id);
+                            setTimeout(() => {
+                                window.location = url;
+                            }, 1000)
+                        }
                     }
                     this.isLoading = false;
                     $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand").attr("disabled", this.isLoading);

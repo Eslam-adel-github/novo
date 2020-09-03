@@ -48,19 +48,25 @@
                 <div class="kt-portlet__body">
                     <div class="row">
                         <div class="col-md-6">
-                            <strong>{{ __('main.name') }}: </strong>
+                            <strong>{{ __('main.name') }} (en): </strong>
                             {{ VarByLang(getData(collect($show),"name")) }}
                             <br>
                             <hr>
                         </div>
+                        <div class="col-md-6">
+                            <strong>{{ __('main.name') }} (ar): </strong>
+                            {{ VarByLang(getData(collect($show),"name"),"ar") }}
+                            <br>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <strong>{{ __('main.working_hour') }}: </strong>
                             {{ VarByLang(getData(collect($show),"working_hour")) }}
                             <br>
                             <hr>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-6">
                             <p>
                                 <strong>{{ __('main.contacts') }}: </strong>
@@ -79,14 +85,14 @@
                             </p>
                             <hr>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <strong>{{ __('main.notes') }}: </strong>
                             {{$show->notes}}
                             <br>
                             <hr>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-6">
                             <strong>{{ __('main.created_at') }}: </strong>
                             {{$show->created_at}}

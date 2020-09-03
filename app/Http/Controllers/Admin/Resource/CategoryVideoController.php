@@ -31,7 +31,7 @@ class CategoryVideoController extends Controller
     public function index(CategoryVideoDataTables $dataTable)
     {
         return $dataTable->render("{$this->viewPath}.index", [
-            'title' => __('main.show-all') . ' ' . __('main.categories')." ". __('main.video'),
+            'title' => __('main.show-all') . ' ' . __('main.video_group')." ",
         ]);
     }
     /**
@@ -42,7 +42,7 @@ class CategoryVideoController extends Controller
     public function create()
     {
         return view("{$this->viewPath}.create", [
-            'title' => __('main.add')  . ' ' . __('main.category')." ". __('main.video'),
+            'title' => __('main.add')  . ' ' . __('main.video_group')." ",
         ]);
     }
 
@@ -72,7 +72,7 @@ class CategoryVideoController extends Controller
         $show = $this->repository->find($id);
         if ($show) {
             return view("{$this->viewPath}.show", [
-                'title' => __('main.show') . ' ' . __('main.category')." ". __('main.video'). ' : ' . VarByLang(getData(collect($show),"name")),
+                'title' => __('main.show') . ' ' . __('main.video_group'). ' : ' . VarByLang(getData(collect($show),"name")),
                 'show' => $show,
             ]);
         }
@@ -89,7 +89,7 @@ class CategoryVideoController extends Controller
         $object = $this->repository->find($id);
         if ($object) {
             return view("{$this->viewPath}.edit", [
-                'title' => __('main.edit') . ' ' . ' ' . __('main.category')." ". __('main.video'). ' : ' . VarByLang(getData(collect($object),"name")),
+                'title' => __('main.edit') . ' ' . ' ' . __('main.video_group'). ' : ' . VarByLang(getData(collect($object),"name")),
                 'edit' => $object,
             ]);
         }

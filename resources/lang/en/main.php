@@ -37,7 +37,7 @@ return [
     'deleted-message' => "Deleted Successfully",
     'rethink_obesity' => "Rethink Obesity",
     'hyper_link' => "Hyper Link",
-    "youtube_video_hyper_link" => "Youtube HyperLink",
+    "youtube_video_hyper_link" => "Video library",
     "old_password" => "old_password",
     'quick_actions' => 'Quick Actions',
     'search_in_sys_fun' => "Search In System Functionality",
@@ -119,7 +119,7 @@ return [
     'hcp_pharmacy'                  =>"HCP & Pharmacy",
     'hcp_pharmacy_mangement'        =>"Hcp & Pharmacy Management",
     'video_mangement'               =>"Video Management",
-    'event_description'            =>"Here You Can Show All The Event",
+    'event_description_quick_action'            =>"Here You Can Show All The Event",
     'event_templete_description'   =>"Here You Can Show All The Event Templete",
     'event_type_description'        =>"Here You Can Show All The Event Type",
     'envents_quick_actions'         =>"Events Quick Actions",
@@ -145,7 +145,10 @@ return [
     'calendar'=>"Calendar",
     'attendance'=>"Attendance",
     'no_participation'=>"No Participation",
-    'profile'=>"Profile"
+    'profile'=>"Profile",
+    'video_group'=>"Video Group",
+    'videos_groups'=>"Videos Groups",
+    'save_and_show'=>"Save and show"
 
 
 ];

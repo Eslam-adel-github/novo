@@ -48,8 +48,15 @@
                 <div class="kt-portlet__body">
                     <div class="row">
                         <div class="col-md-12">
-                            <strong>{{ __('main.question') }}: </strong>
+                            <strong>{{ __('main.question') }} (en): </strong>
                             {{ VarByLang(getData(collect($show),"question")) }}
+                            <br><hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <strong>{{ __('main.question') }} (ar): </strong>
+                            {{ VarByLang(getData(collect($show),"question"),"ar") }}
                             <br><hr>
                         </div>
                     </div>
@@ -60,6 +67,14 @@
                             <br><hr>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <strong>{{ __('main.description') }} (ar): </strong>
+                            {{ VarByLang(getData(collect($show),"description"),"ar") }}
+                            <br><hr>
+                        </div>
+                    </div>
+
 
                     <div class="row">
                         <div class="col-md-12">

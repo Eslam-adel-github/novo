@@ -52,7 +52,7 @@
                         <li class="kt-menu__item " aria-haspopup="true">
                             <a href="{{ route('admin.category_video.index') }}" class="kt-menu__link">
                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-                                <span class="kt-menu__link-text">{{ trans('main.categories') }} {{ trans('main.video') }} </span>
+                                <span class="kt-menu__link-text">{{ trans('main.video_group') }} </span>
                             </a>
                         </li>
                         <li class="kt-menu__item " aria-haspopup="true">

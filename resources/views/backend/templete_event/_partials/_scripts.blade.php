@@ -121,17 +121,33 @@
             submitForm (status) {
                 this.isLoading = true;
                 $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light").attr("disabled", this.isLoading);
-                this.Save()
+                this.Save(status)
             },
-            Save(){
-                console.log("fdata is : ",this.fData);
-                //return 0;
+            Save(status){
+
                 axios.post('{{ $submitUrl }}', this.fData).then((res) => {
                     if (res.data.success) {
                         swal.fire("{{ __('main.success') }}", "{{ __('main.' . ($action == 'create' ? 'added-message' : 'updated-message')) }}", "success");
                         setTimeout(() => {
                             window.location = "{{ route("admin.templete_event.index") }}";
                         }, 1000)
+                        if (status == '') {
+                            setTimeout(() => {
+                                window.location = "{{ route("admin.templete_event.index") }}";
+                            }, 1000)
+
+                        } else if (status == "continue") {
+                            setTimeout(() => {
+                                window.location = "{{ route("admin.templete_event.create") }}";
+                            }, 1000)
+
+                        } else {
+                            var url = '{{ route("admin.templete_event.show", ":id") }}';
+                            url = url.replace(':id', res.data.payload.id);
+                            setTimeout(() => {
+                                window.location = url;
+                            }, 1000)
+                        }
                     }
                     this.isLoading = false;
                     $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand").attr("disabled", this.isLoading);
