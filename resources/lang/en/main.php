@@ -132,7 +132,7 @@ return [
     'hcp_description'                =>"Here You Can Show All The HCP",
     'pharmacy_description'           =>"Here You Can Show All Pharmacy",
     'video_quick_actions'            =>"Video Quick Actions",
-    'category_video_description'     =>"Here You Can Show All The Category Video",
+    'category_video_description'     =>"Here You Can Show All The  Video Group",
     'video_description'              =>"Here You Can Show All The Videos",
     'admin'=>"",
     'index'=>"Show",
