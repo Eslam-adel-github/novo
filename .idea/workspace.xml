@@ -3,73 +3,42 @@
   <component name="ChangeListManager">
     <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/CategoryFaqDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CategoryFaqDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/CategoryLibraryDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CategoryLibraryDataTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DataTables/CategoryVideoDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CategoryVideoDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/EventDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/EventDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/EventTypeDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/EventTypeDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/FaqDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/FaqDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/HCPDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/HCPDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/LibraryDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/LibraryDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/PharmacyDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/PharmacyDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/RethinkObesityDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/RethinkObesityDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/TempleteEventDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/TempleteEventDataTables.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DataTables/YoutubeVideoDataTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/YoutubeVideoDataTables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Resource/CategoryVideoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Resource/CategoryVideoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_faq/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_faq/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_faq/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_faq/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_faq/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_faq/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/Cards/video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/Cards/video.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/category_faq/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_faq/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_library/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_library/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_library/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_library/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category_library/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_library/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/category_library/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_library/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/category_video/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_video/_partials/_scripts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/category_video/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_video/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/category_video/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_video/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/category_video/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_video/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/category_video/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category_video/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/event/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/event_type/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event_type/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/event_type/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event_type/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/event_type/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event_type/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/event_type/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event_type/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/hcp/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/hcp/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/hcp/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/hcp/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/hcp/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/hcp/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/hcp/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/hcp/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/home/_partials/statistics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/home/_partials/statistics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/home/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/home/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/libraries/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/libraries/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/pharmacy/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pharmacy/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/pharmacy/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pharmacy/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/pharmacy/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pharmacy/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/pharmacy/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pharmacy/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/rethink_obesity/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/templete_event/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/templete_event/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/templete_event/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/templete_event/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/templete_event/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/templete_event/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/templete_event/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/templete_event/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/_partials/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/_partials/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/_partials/_scripts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/youtube_video/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/youtube_video/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.zip" beforeDir="false" afterPath="$PROJECT_DIR$/routes.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,23 +198,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../elbadry" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/home/_partials" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\home\_partials" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\public\backend\dist\assets\js\pages" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\layout" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\event" />
+      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\Cards" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\novo_nor_disk\public\backend\dist\assets\js" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\public\backend\dist\assets\js\pages" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Controllers\Admin\SAC" />
       <recent name="C:\xampp\htdocs\novo_nor_disk\app\Http\Resources\YoutubeVideo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\novo_nor_disk\public\backend\dist\assets\js\pages" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\layout" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\event" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend\Cards" />
-      <recent name="C:\xampp\htdocs\novo_nor_disk\resources\views\backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -617,7 +586,14 @@
       <workItem from="1599148424449" duration="1819000" />
       <workItem from="1599150277111" duration="1393000" />
       <workItem from="1599152092700" duration="2141000" />
-      <workItem from="1599154530201" duration="246000" />
+      <workItem from="1599154530201" duration="1462000" />
+      <workItem from="1599380202156" duration="1775000" />
+      <workItem from="1599382032219" duration="1783000" />
+      <workItem from="1599383856591" duration="1770000" />
+      <workItem from="1599385668730" duration="1756000" />
+      <workItem from="1599387550577" duration="1642000" />
+      <workItem from="1599389306402" duration="2023000" />
+      <workItem from="1599393944852" duration="1168000" />
     </task>
     <servers />
   </component>
@@ -629,18 +605,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1598173505581" />
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598187380444">
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599381959967">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598187380444" />
+    <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1599381959967" />
     <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1597243081519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597243081519" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1599147150421">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1599380322466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599147150421" />
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599380322466" />
     <state x="387" y="198" key="NewPhpClassDialog" timestamp="1597654033771">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -649,14 +625,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594571780118" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1599154588668">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1599389746014">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1599154588668" />
-    <state x="390" y="125" width="800" height="478" key="find.popup" timestamp="1598181146114">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1599389746014" />
+    <state x="566" y="123" width="800" height="478" key="find.popup" timestamp="1599385128894">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="125" width="800" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598181146114" />
+    <state x="566" y="123" width="800" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599385128894" />
     <state x="339" y="164" key="run.anything.popup" timestamp="1598171673478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

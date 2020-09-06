@@ -148,7 +148,8 @@ return [
     'profile'=>"Profile",
     'video_group'=>"Video Group",
     'videos_groups'=>"Videos Groups",
-    'save_and_show'=>"Save and show"
+    'save_and_show'=>"Save and show",
+    'video_library'=>"Video Library"
 
 
 ];

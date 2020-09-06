@@ -30,6 +30,12 @@
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.HCP') }}</span>
                 </a>
             </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.HCP.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.HCP') }}</span>
+                </a>
+            </li>
         @endslot
     @endcomponent
 @endsection

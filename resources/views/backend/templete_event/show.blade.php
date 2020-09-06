@@ -24,6 +24,12 @@
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.templete_events') }}</span>
                 </a>
             </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.templete_event.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.templete_event') }}</span>
+                </a>
+            </li>
         @endslot
     @endcomponent
 @endsection
@@ -155,7 +161,7 @@
                             <div class="kt-portlet__body">
                                 <div class="kt-portlet__head-toolbar">
                                     <div class="dropdown dropdown-inline">
-                                        @if($show->agenda)
+                                        @if($show->image)
                                             <img width="120px;" height="120px" src="{{asset('uploads/'.$show->image)}}">
                                         @else
                                             <p style="text-align: center">
@@ -189,7 +195,7 @@
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <td>{{ $show->agenda }}</td>
+                                                    <td>{{ substr($show->agenda,0,50) }}</td>
                                                     <td>
                                                         <a href='{{ asset("uploads/$show->agenda") }}' id="{{ $show->agenda }}" class="btn btn-info btn-sm" download> <i class="fa fa-download"></i> </a>
                                                     </td>

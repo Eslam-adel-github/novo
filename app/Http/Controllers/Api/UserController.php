@@ -81,7 +81,7 @@ class UserController extends Controller
     public function updateProfile(UsersRequest $request)
     {
         $id=Auth::user()->id;
-        $request['type']=2;
+        //$request['type']=2;
         $user = $this->userService->update($request,$id);
 
         if ($user) {

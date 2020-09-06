@@ -10,24 +10,24 @@
         <ul class="kt-menu__nav">
             <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click"
                 aria-haspopup="true">
-            <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin') }}"
+            <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/dashboard') }}"
                 data-ktmenu-submenu-toggle="click" aria-haspopup="true">
-                <a href="{{ aurl('/') }}" class="kt-menu__link">
+                <a href="{{ route('admin.dashboard') }}" class="kt-menu__link">
                     <span class="kt-menu__link-text">{{ __('main.dashboard') }}</span>
                     <i class="kt-menu__ver-arrow la la-angle-right"></i>
                 </a>
             </li>
 
-            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/users',true) }}"
+            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/users') }}"
                 data-ktmenu-submenu-toggle="click" aria-haspopup="true">
                 <a href="{{ route('admin.users.index') }}" class="kt-menu__link">
                     <span class="kt-menu__link-text">{{ __('main.users') }}</span>
                     <i class="kt-menu__ver-arrow la la-angle-right"></i>
                 </a>
             </li>
-            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/youtube_video') }}"
+            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/video_library') }}"
                 data-ktmenu-submenu-toggle="click" aria-haspopup="true">
-                <a href="{{ route('admin.youtube_video.index') }}" class="kt-menu__link">
+                <a href="{{ route('admin.video_library.index') }}" class="kt-menu__link">
                     <span class="kt-menu__link-text">{{ __('main.youtube_video_hyper_link') }}</span>
                     <i class="kt-menu__ver-arrow la la-angle-right"></i>
                 </a>
@@ -50,7 +50,7 @@
                 <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
                     <ul class="kt-menu__subnav">
                         <li class="kt-menu__item " aria-haspopup="true">
-                            <a href="{{ route('admin.category_video.index') }}" class="kt-menu__link">
+                            <a href="{{ route('admin.video_group.index') }}" class="kt-menu__link">
                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
                                 <span class="kt-menu__link-text">{{ trans('main.video_group') }} </span>
                             </a>

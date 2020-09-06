@@ -36,16 +36,16 @@
                     if (res.data.success) {
                         if (status == '') {
                             setTimeout(() => {
-                                window.location = "{{ route("admin.category_video.index") }}";
+                                window.location = "{{ route("admin.video_group.index") }}";
                             }, 1000)
 
                         } else if (status == "continue") {
                             setTimeout(() => {
-                                window.location = "{{ route("admin.category_video.create") }}";
+                                window.location = "{{ route("admin.video_group.create") }}";
                             }, 1000)
 
                         } else {
-                            var url = '{{ route("admin.category_video.show", ":id") }}';
+                            var url = '{{ route("admin.video_group.show", ":id") }}';
                             url = url.replace(':id', res.data.payload.id);
                             setTimeout(() => {
                                 window.location = url;

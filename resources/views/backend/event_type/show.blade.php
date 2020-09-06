@@ -24,6 +24,12 @@
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.events_type') }}</span>
                 </a>
             </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.event_type.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.event_type') }}</span>
+                </a>
+            </li>
         @endslot
     @endcomponent
 @endsection

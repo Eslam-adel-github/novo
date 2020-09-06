@@ -30,6 +30,12 @@
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.pharmacies') }}</span>
                 </a>
             </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.pharmacy.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.pharmacy') }}</span>
+                </a>
+            </li>
         @endslot
     @endcomponent
 @endsection

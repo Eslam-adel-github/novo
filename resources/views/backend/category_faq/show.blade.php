@@ -24,6 +24,12 @@
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.categories') }} {{ __('main.common_faq') }}</span>
                 </a>
             </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.category_common_faq.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.category') }} {{ __('main.common_faq') }}</span>
+                </a>
+            </li>
         @endslot
     @endcomponent
 @endsection

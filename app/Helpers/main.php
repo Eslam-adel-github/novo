@@ -150,13 +150,13 @@ function is_active($url, $is_parent_menu = false): string
 {
     if(\Request::is($url."*")){
         return $is_parent_menu ? 'kt-menu__item--submenu kt-menu__item--open kt-menu__item--here' : 'kt-menu__item--active';
-
     }
     /*
     if (active_route($url)) {
         return $is_parent_menu ? 'kt-menu__item--submenu kt-menu__item--open kt-menu__item--here' : 'kt-menu__item--active';
     }
     */
+
     return '';
 }
 

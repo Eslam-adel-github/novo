@@ -32,8 +32,8 @@ class CategoryVideoDataTables extends DataTable
                 return date("Y-m-d H:i:s",strtotime($model->created_at));
             })
             ->editColumn('actions',function($model){
-                $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'category_video.show',[$model->id]), __('main.show'));
-                $edit    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-edit"></i></a>',route(config('system.admin.name').'category_video.edit',[$model->id]), __('main.edit'));
+                $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'video_group.show',[$model->id]), __('main.show'));
+                $edit    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-edit"></i></a>',route(config('system.admin.name').'video_group.edit',[$model->id]), __('main.edit'));
                 $delete  = sprintf('<a data-id="'.$model->id.'" id="CategoryVideoDelete_'.$model->id.'" class="CategoryVideoDelete btn btn-sm btn-clean btn-icon btn-icon-md"  title="%s"><i class="la la-trash"></i></a>',__('main.delete'));
                 $delete.=sprintf('
                         <script defer>
@@ -69,11 +69,11 @@ class CategoryVideoDataTables extends DataTable
                     __('main.ask-delete') . VarByLang(getData(collect($model),"name")),
                     __('main.yes'),
                     __('main.no'),
-                    route(config('system.admin.name').'category_video.destroy',[$model->id]),
+                    route(config('system.admin.name').'video_group.destroy',[$model->id]),
                     __('main.success'),
                     __('main.deleted-message'),
-                    route('admin.category_video.index'),
-                    route('admin.category_video.index'),
+                    route('admin.video_group.index'),
+                    route('admin.video_group.index'),
                     __('main.canceled'),
                     __('main.no_data_deleted')
 

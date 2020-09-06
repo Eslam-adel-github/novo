@@ -10,7 +10,7 @@
 
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
-        <a href="{{ route('admin.youtube_video.index') }}" class="kt-subheader__breadcrumbs-link">
+        <a href="{{ route('admin.video_library.index') }}" class="kt-subheader__breadcrumbs-link">
             {{ __('main.youtube_video_hyper_link') }}
         </a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
@@ -20,7 +20,7 @@
 
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.youtube_video.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.video_library.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.youtube_video_hyper_link') }}</span>
                 </a>
@@ -84,6 +84,6 @@
     @include('backend.youtube_video._partials._scripts', [
         'action' => 'create',
         'data' => collect(old()),
-        'submitUrl' => route('admin.youtube_video.store'),
+        'submitUrl' => route('admin.video_library.store'),
     ])
 @endsection

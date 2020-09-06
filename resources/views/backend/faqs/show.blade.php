@@ -30,6 +30,12 @@
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.faqs') }}</span>
                 </a>
             </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.faq.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.faq') }}</span>
+                </a>
+            </li>
         @endslot
     @endcomponent
 @endsection

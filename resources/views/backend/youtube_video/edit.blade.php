@@ -14,7 +14,7 @@
 
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.youtube_video.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.video_library.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.youtube_video_hyper_link') }}</span>
                 </a>
@@ -78,6 +78,6 @@
     @include('backend.youtube_video._partials._scripts', [
         'action' => 'edit',
         'data' => collect($edit),
-        'submitUrl' => route('admin.youtube_video.update', [$edit->id]),
+        'submitUrl' => route('admin.video_library.update', [$edit->id]),
     ])
 @endsection

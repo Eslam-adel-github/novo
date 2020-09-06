@@ -11,7 +11,7 @@
 
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
-        <a href="{{ route('admin.youtube_video.index') }}" class="kt-subheader__breadcrumbs-link">
+        <a href="{{ route('admin.video_library.index') }}" class="kt-subheader__breadcrumbs-link">
             {{ __('main.youtube_video_hyper_link') }}
         </a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
@@ -37,7 +37,7 @@
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
                             <div class="dropdown dropdown-inline">
-                                <a href="{{ route('admin.youtube_video.create') }}" class="btn btn-brand btn-icon-sm">
+                                <a href="{{ route('admin.video_library.create') }}" class="btn btn-brand btn-icon-sm">
                                     <i class="flaticon2-plus"></i> {{ __('main.add_new') }}
                                 </a>
                             </div>

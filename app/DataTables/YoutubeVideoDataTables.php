@@ -26,16 +26,21 @@ class YoutubeVideoDataTables extends DataTable
             ->editColumn('name', function (YoutubeVideo $model) {
                 return VarByLang(getData(collect($model),"name"));
             })
+            /*
             ->editColumn('hyper_link', function (YoutubeVideo $model) {
                 return substr($model->hyper_link,0,30);
+            })
+            */
+            ->editColumn('category_video_id', function (YoutubeVideo $model) {
+                return $model->category ?VarByLang(getData(collect($model),"name")):"N/A";
             })
             ->editColumn('checkbox', $this->getColumnCheckboxHtml())
             ->editColumn('created_at',function ($model){
                 return date("Y-m-d",strtotime($model->created_at));
             })
             ->editColumn('actions',function($model){
-                $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'youtube_video.show',[$model->id]), __('main.show'));
-                $edit    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-edit"></i></a>',route(config('system.admin.name').'youtube_video.edit',[$model->id]), __('main.edit'));
+                $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'video_library.show',[$model->id]), __('main.show'));
+                $edit    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-edit"></i></a>',route(config('system.admin.name').'video_library.edit',[$model->id]), __('main.edit'));
                 $delete  = sprintf('<a data-id="'.$model->id.'" id="youtubVideoDelete_'.$model->id.'" class="RethinkObesityDelete btn btn-sm btn-clean btn-icon btn-icon-md"  title="%s"><i class="la la-trash"></i></a>',__('main.delete'));
                 $delete.=sprintf('
                         <script defer>
@@ -71,11 +76,11 @@ class YoutubeVideoDataTables extends DataTable
                     __('main.ask-delete') . VarByLang(getData(collect($model),"name")),
                     __('main.yes'),
                     __('main.no'),
-                    route(config('system.admin.name').'youtube_video.destroy',[$model->id]),
+                    route(config('system.admin.name').'video_library.destroy',[$model->id]),
                     __('main.success'),
                     __('main.deleted-message'),
-                    route('admin.youtube_video.index'),
-                    route('admin.youtube_video.index'),
+                    route('admin.video_library.index'),
+                    route('admin.video_library.index'),
                     __('main.canceled'),
                     __('main.no_data_deleted')
 
@@ -108,7 +113,7 @@ class YoutubeVideoDataTables extends DataTable
             ->columns($this->getColumns())
             ->minifiedAjax()
             ->buttons($this->getButtons())
-            ->parameters($this->getCustomBuilderParameters([1, 2,3], [], GetLanguage() == 'ar'));
+            ->parameters($this->getCustomBuilderParameters([1], [], GetLanguage() == 'ar'));
     }
 
     /**
@@ -121,7 +126,8 @@ class YoutubeVideoDataTables extends DataTable
         return [
             Column::computed('checkbox', $this->getTitleCheckboxHtml())->width(15)->printable(false),
             Column::make('name', 'name')->title(trans('main.name')." (en)"),
-            Column::make('hyper_link', 'hyper_link')->title(trans('main.hyper_link')),
+            //Column::make('hyper_link', 'hyper_link')->title(trans('main.hyper_link')),
+            Column::make('category_video_id', 'category_video_id')->title(trans('main.category')." (en)"),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];

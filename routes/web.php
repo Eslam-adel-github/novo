@@ -23,6 +23,7 @@ Route::middleware(\App\Http\Middleware\AdminMiddleware::class, \App\Http\Middlew
 */
 Auth::routes(["register"=>false]);
 Route::redirect('/','admin',302);
+Route::redirect('admin','admin/dashboard',302);
 
 Route::get('/change-lang/{lang}', 'SAC\ChangeLanguage')->name('lang.change');
 

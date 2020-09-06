@@ -8,20 +8,26 @@
         @endslot
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
-        <a href="{{ route('admin.category_video.index') }}" class="kt-subheader__breadcrumbs-link">
+        <a href="{{ route('admin.video_group.index') }}" class="kt-subheader__breadcrumbs-link">
             {{ __('main.videos_groups') }}
         </a>
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.category_video.edit', [$show->id]) }}" class="kt-nav__link">
+                <a href="{{ route('admin.video_group.edit', [$show->id]) }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-edit"></i>
                     <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.video_group') }}</span>
                 </a>
             </li>
             <li class="kt-nav__item">
-                <a href="{{ route('admin.category_video.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.video_group.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.video_group') }}</span>
+                </a>
+            </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.video_group.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.video_group') }}</span>
                 </a>
             </li>
         @endslot

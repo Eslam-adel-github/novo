@@ -8,15 +8,21 @@
         @endslot
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.youtube_video.edit', [$show->id]) }}" class="kt-nav__link">
+                <a href="{{ route('admin.video_library.edit', [$show->id]) }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-edit"></i>
                     <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.youtube_video_hyper_link') }}</span>
                 </a>
             </li>
             <li class="kt-nav__item">
-                <a href="{{ route('admin.youtube_video.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.video_library.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
                     <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.youtube_video_hyper_link') }}</span>
+                </a>
+            </li>
+            <li class="kt-nav__item">
+                <a href="{{ route('admin.video_library.create') }}" class="kt-nav__link">
+                    <i class="kt-nav__link-icon flaticon-add"></i>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.youtube_video_hyper_link') }}</span>
                 </a>
             </li>
         @endslot

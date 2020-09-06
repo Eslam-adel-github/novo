@@ -7,10 +7,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', 'SAC\LoginView')->name("login");
 Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(function () {
 
-    Route::get('/', 'SAC\Dashboard')->name('dashboard');
+    Route::get('/dashboard', 'SAC\Dashboard')->name('dashboard');
     Route::resource('/users', 'Resource\UsersController');
     Route::resource('/rethink_obesity', 'Resource\RethinkObesityController');
-    Route::resource('/youtube_video', 'Resource\YoutubeVideoController');
+    Route::resource('/video_library', 'Resource\YoutubeVideoController');
+    //Route::resource('/video_library', 'Resource\YoutubeVideoController');
     Route::resource('/category_library', 'Resource\CategoryLibraryController');
     Route::resource('/category_common_faq', 'Resource\CategoryFaqController');
     Route::resource('/faq', 'Resource\FaqController');
@@ -28,7 +29,8 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
     Route::get('/templete_events_all', 'SAC\GetAllTempleteEvents')->name('templete_events.all');
     Route::get('/templete_event_single/{parameter}', 'SAC\GetSingleTempleteEvent')->name('get_templete_event.single');
 
-    Route::resource('/category_video', 'Resource\CategoryVideoController');
+    Route::resource('/video_group', 'Resource\CategoryVideoController');
+    //Route::resource('/category_video', 'Resource\CategoryVideoController');
 
     Route::get('/category_video_all', 'SAC\GetAllCategoryVideo')->name('category_video.all');
 

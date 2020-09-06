@@ -77,16 +77,16 @@
 
                         if (status == '') {
                             setTimeout(() => {
-                                window.location = "{{ route("admin.youtube_video.index") }}";
+                                window.location = "{{ route("admin.video_library.index") }}";
                             }, 1000)
 
                         } else if (status == "continue") {
                             setTimeout(() => {
-                                window.location = "{{ route("admin.youtube_video.create") }}";
+                                window.location = "{{ route("admin.video_library.create") }}";
                             }, 1000)
 
                         } else {
-                            var url = '{{ route("admin.youtube_video.show", ":id") }}';
+                            var url = '{{ route("admin.video_library.show", ":id") }}';
                             url = url.replace(':id', res.data.payload.id);
                             setTimeout(() => {
                                 window.location = url;

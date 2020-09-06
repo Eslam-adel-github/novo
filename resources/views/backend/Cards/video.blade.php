@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="kt-iconbox__desc">
                                     <h3 class="kt-iconbox__title">
-                                        <a class="kt-link" href="{{ route('admin.youtube_video.index') }}">{{ trans("main.youtube_video_hyper_link") }}</a>
+                                        <a class="kt-link" href="{{ route('admin.video_library.index') }}">{{ trans("main.youtube_video_hyper_link") }}</a>
                                     </h3>
                                     <div class="kt-iconbox__content">
                                         {{ __('main.video_description') }}
