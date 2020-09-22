@@ -11,6 +11,8 @@ class CategoryVideo extends Translatable
     protected $fillable=["name"];
 
     protected $translatable=[
+
         'name'
+
     ];
 }

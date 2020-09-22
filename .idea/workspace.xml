@@ -4,7 +4,6 @@
     <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/cards/video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/cards/video.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +163,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/home/_partials" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ib4broker_crm" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -560,7 +559,97 @@
       <workItem from="1599387550577" duration="1642000" />
       <workItem from="1599389306402" duration="2023000" />
       <workItem from="1599393944852" duration="1633000" />
-      <workItem from="1599400773672" duration="557000" />
+      <workItem from="1599400773672" duration="1276000" />
+      <workItem from="1599405300743" duration="830000" />
+      <workItem from="1599407114315" duration="602000" />
+      <workItem from="1599408977211" duration="595000" />
+      <workItem from="1599410790655" duration="609000" />
+      <workItem from="1599466280429" duration="772000" />
+      <workItem from="1599468032006" duration="595000" />
+      <workItem from="1599469864434" duration="595000" />
+      <workItem from="1599471721865" duration="595000" />
+      <workItem from="1599473535740" duration="595000" />
+      <workItem from="1599475370123" duration="1263000" />
+      <workItem from="1599477191949" duration="180000" />
+      <workItem from="1599479931771" duration="714000" />
+      <workItem from="1599481742273" duration="594000" />
+      <workItem from="1599483595592" duration="600000" />
+      <workItem from="1599485439495" duration="595000" />
+      <workItem from="1599487248549" duration="615000" />
+      <workItem from="1599490194746" duration="595000" />
+      <workItem from="1599492242599" duration="638000" />
+      <workItem from="1599494058456" duration="604000" />
+      <workItem from="1599497824215" duration="624000" />
+      <workItem from="1599499648378" duration="582000" />
+      <workItem from="1599501493300" duration="699000" />
+      <workItem from="1599554642344" duration="687000" />
+      <workItem from="1599556561947" duration="626000" />
+      <workItem from="1599558364564" duration="873000" />
+      <workItem from="1599560391515" duration="626000" />
+      <workItem from="1599565242595" duration="594000" />
+      <workItem from="1599567030343" duration="595000" />
+      <workItem from="1599568870773" duration="592000" />
+      <workItem from="1599570683275" duration="623000" />
+      <workItem from="1599572492824" duration="649000" />
+      <workItem from="1599574493853" duration="634000" />
+      <workItem from="1599576792606" duration="584000" />
+      <workItem from="1599578609176" duration="603000" />
+      <workItem from="1599639362408" duration="593000" />
+      <workItem from="1599641168174" duration="646000" />
+      <workItem from="1599642980911" duration="620000" />
+      <workItem from="1599645173868" duration="603000" />
+      <workItem from="1599647115402" duration="595000" />
+      <workItem from="1599649377292" duration="595000" />
+      <workItem from="1599653460849" duration="594000" />
+      <workItem from="1599655266538" duration="596000" />
+      <workItem from="1599658372710" duration="595000" />
+      <workItem from="1599662042079" duration="595000" />
+      <workItem from="1599663871886" duration="595000" />
+      <workItem from="1599665683810" duration="652000" />
+      <workItem from="1599667546662" duration="595000" />
+      <workItem from="1599669434717" duration="619000" />
+      <workItem from="1599671245512" duration="595000" />
+      <workItem from="1599673127020" duration="602000" />
+      <workItem from="1599674973444" duration="603000" />
+      <workItem from="1599726230302" duration="869000" />
+      <workItem from="1599728069598" duration="713000" />
+      <workItem from="1599729880360" duration="1034000" />
+      <workItem from="1599731699052" duration="595000" />
+      <workItem from="1599734277854" duration="1150000" />
+      <workItem from="1599736088778" duration="594000" />
+      <workItem from="1599737918618" duration="600000" />
+      <workItem from="1599741222878" duration="595000" />
+      <workItem from="1599743032604" duration="618000" />
+      <workItem from="1599744892977" duration="594000" />
+      <workItem from="1599748387638" duration="595000" />
+      <workItem from="1599750276960" duration="596000" />
+      <workItem from="1599986690515" duration="589000" />
+      <workItem from="1600073695233" duration="574000" />
+      <workItem from="1600076163745" duration="638000" />
+      <workItem from="1600077929878" duration="670000" />
+      <workItem from="1600079821996" duration="677000" />
+      <workItem from="1600081698538" duration="582000" />
+      <workItem from="1600083724803" duration="566000" />
+      <workItem from="1600085661660" duration="1156000" />
+      <workItem from="1600088870694" duration="886000" />
+      <workItem from="1600090698323" duration="595000" />
+      <workItem from="1600092523403" duration="603000" />
+      <workItem from="1600094436288" duration="598000" />
+      <workItem from="1600151322756" duration="926000" />
+      <workItem from="1600153131647" duration="671000" />
+      <workItem from="1600154972412" duration="1083000" />
+      <workItem from="1600156902049" duration="610000" />
+      <workItem from="1600181497088" duration="622000" />
+      <workItem from="1600247231452" duration="968000" />
+      <workItem from="1600257409476" duration="574000" />
+      <workItem from="1600263102929" duration="592000" />
+      <workItem from="1600264940635" duration="1184000" />
+      <workItem from="1600417257538" duration="190000" />
+      <workItem from="1600593455548" duration="605000" />
+      <workItem from="1600606226485" duration="743000" />
+      <workItem from="1600764572645" duration="873000" />
+      <workItem from="1600766741166" duration="773000" />
+      <workItem from="1600768553272" duration="592000" />
     </task>
     <servers />
   </component>
@@ -580,10 +669,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597243081519" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1599380322466">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1600593471454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599380322466" />
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600593471454" />
     <state x="387" y="198" key="NewPhpClassDialog" timestamp="1597654033771">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -592,10 +681,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594571780118" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1599400773883">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1600764868135">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1599400773883" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1600764868135" />
     <state x="566" y="123" width="800" height="478" key="find.popup" timestamp="1599400976714">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
