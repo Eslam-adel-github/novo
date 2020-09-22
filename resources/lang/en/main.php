@@ -151,6 +151,7 @@ return [
     'save_and_show'=>"Save and show",
     'video_library'=>"Video Library",
     'video_library'=>"Video Library"
+    'video_library'=>"Video Library"
 
 
 ];
