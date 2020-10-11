@@ -63,7 +63,6 @@
             }
         </style>
 		<link rel="shortcut icon" href="{!! ShowImageFromStorage(null, 'WebsiteSetting-collection', 'avatar') !!}"/>
-        @livewireStyles
 	</head>
 
 	<!-- end::Head -->
@@ -220,35 +219,39 @@
 		{{-- @routes --}}
 		<!-- end::Global Config -->
 
-		<!--begin::Global Theme Bundle(used by all pages) -->
+		<!--begin::Global Theme Bundle(used by all pages)
+		 if there is any thing in design change all scripts to start with backend instead of backend_additional
+		 -->
         <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
-        
-        
-        
-        <script src="{{ asset('backend/dist/assets/plugins/global/plugins.bundle.js') }}" type="text/javascript"></script>
-        
-        <script src="{{ asset('backend/dist/assets/js/scripts.bundle.js') }}" type="text/javascript"></script>
-         <script src="{{ asset('backend/dist/assets/js/test.bundle.js') }}" type="text/javascript"></script>
-        
-        
-        <script src="{{ asset('backend/shared/js/vue.min.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('backend/shared/js/helpers.js') }}" type="text/javascript"></script>
+
+
+
+        <script src="{{ asset('backend_additional/dist/assets/plugins/global/plugins.bundle.js') }}" type="text/javascript"></script>
+
+        <script src="{{ asset('backend_additional/dist/assets/js/scripts.bundle.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('backend_additional/dist/assets/js/test.bundle.js') }}" type="text/javascript"></script>
+
+
+        <script src="{{ asset('backend_additional/shared/js/vue.min.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('backend_additional/shared/js/helpers.js') }}" type="text/javascript"></script>
 
         <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
 
-
-
         <script src="{{ asset("backend/dist/assets/plugins/custom/datatables/datatables.bundle.js") }}" type="text/javascript"></script>
+        <!--
         <script src="https://unpkg.com/vue-form-wizard/dist/vue-form-wizard.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.min.js"></script>
         <script src="{{ asset("backend/dist/assets/js/pages/custom/wizard/wizard-4.js") }}" type="text/javascript"></script>
+        -->
 
+        <!--begin::Global Theme Bundle(used by all pages) -->
 
         @include('backend.layout.globals.scripts')
 
 		<!--end::Global Theme Bundle -->
-
-		@include('backend.layout.globals.notifications')
+        <!--
+		    @include('backend.layout.globals.notifications')
+        -->
 
         <script>
             $( document ).ready(function() {
@@ -259,13 +262,6 @@
                         $('#kt-quick-panel-search_lead').focus();
                     }, 100);
                 })
-                /*
-                $(".btn-icon").on("click",function(){
-                    $(this).siblings('.dropdown-menu').first().addClass("show")
-                });
-
-                 */
-
             });
         </script>
 

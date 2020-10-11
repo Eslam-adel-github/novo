@@ -39,3 +39,13 @@ Route::post('/images','ImageController@store')->name('uploade.image');
 
 Route::get('/get_youtube_video_category','CategoryVideoController')->name('category_video');
 
+Route::get("/categories/library","CategoryLibraryController");
+Route::get("/categories/faqs","CategoryFaqController");
+Route::get("/user/events/history","EventController@eventsHistory");
+Route::get("/user/fav","LibraryFavController@index");
+Route::post("/user/fav","LibraryFavController@store");
+Route::apiResource("tasks","TaskController");
+Route::get("/specialty","SpecialtyController");
+Route::get("/about_app","Websettings");
+
+

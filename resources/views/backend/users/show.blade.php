@@ -95,6 +95,18 @@
                             <br><hr>
                         </div>
                         <div class="col-md-6">
+                            <strong>{{ __('main.type') }}: </strong>
+                            {{ $show->type==1? "Admin":"HCP" }}
+                            <br><hr>
+                        </div>
+                        @if($show->type==2)
+                            <div class="col-md-6">
+                                <strong>{{ __('main.specialty') }}: </strong>
+                                {{ $show->specaility? VarByLang(getData(collect($show->specaility),"name")) : '' }}
+                                <br><hr>
+                            </div>
+                        @endif
+                        <div class="col-md-6">
                             <strong>{{ __('main.created_at') }}: </strong>
                             {{ $show->created_at }}
                             <br><hr>

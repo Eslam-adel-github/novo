@@ -27,22 +27,29 @@
                     <div v-if="errors.has('event_description-' + lang)" class="invalid-feedback">@{{ errors.first('event_description-'+lang) }}</div>
                 </div>
             </div>
-            <div class="form-group row" :class="{'validated' : errors.has('event_type_id')}">
-                <label class="col-3 col-form-label">{{ __('main.event_type') }}</label>
-                <div class="col-9">
-                    <select2 v-validate="'required'" name="event_type_id" v-model="fData.event_type_id" :options="events_type" :form_errors="errors"  data-vv-as="{{ trans('main.event_type') }}" :settings="{placeholder: '{{ __('main.event_type') }}'}" ></select2>
-                </div>
-            </div>
             <div class="form-group row">
                 <label for="tags" class="col-3 col-form-label">{{ trans('main.tags') }}</label>
                 <div class="col-9">
                     <form-group-input-tags2  element-id="tags" v-model="fData.tags" :existing-tags="tags" :typeahead="true" placeholder="{{ trans('main.write_tags') }}" typeahead-style="badges"></form-group-input-tags2>
                 </div>
             </div>
+            <div class="form-group row" :class="{'validated' : errors.has('event_type_id')}">
+                <label class="col-3 col-form-label">{{ __('main.event_type') }}</label>
+                <div class="col-9">
+                    <select2 v-validate="'required'" @change="getDoctorParticiption()" name="event_type_id" v-model="fData.event_type_id" :options="events_type" :form_errors="errors"  data-vv-as="{{ trans('main.event_type') }}" :settings="{placeholder: '{{ __('main.event_type') }}'}" ></select2>
+                </div>
+            </div>
             <div class="form-group row" :class="{'validated' : errors.has('participation')}">
                 <label class="col-3 col-form-label">{{ __('main.participations') }}</label>
                 <div class="col-9">
                     <Select2 v-validate="'required'"  name="participation" data-vv-as="{{ trans('main.participations') }}" :form_errors="errors" :options="participations" v-model="fData.participation" :settings="{placeholder: '{{ __('main.participations') }}'}" />
+                    <div v-if="errors.has('participation')" class="invalid-feedback">@{{ errors.first('participation') }}</div>
+                </div>
+            </div>
+            <div v-if="fData.participation=='doctor'" class="form-group row" :class="{'validated' : errors.has('doctors_id')}">
+                <label class="col-3 col-form-label">{{ __('main.doctors_participations') }}</label>
+                <div class="col-9">
+                    <Select2 multiple v-validate="'required'"  name="doctors_id[]" data-vv-as="{{ __('main.doctors') }} {{ __('main.participations') }}" :form_errors="errors" :options="doctorsParticiptions" v-model="fData.doctors_id" :settings="{placeholder: '{{ __('main.doctors_participations') }}'}" />
                     <div v-if="errors.has('participation')" class="invalid-feedback">@{{ errors.first('participation') }}</div>
                 </div>
             </div>

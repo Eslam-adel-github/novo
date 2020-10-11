@@ -23,4 +23,8 @@ class Library extends Translatable
     {
         return $this->belongsTo(CategoryLibrary::class , 'category_library_id');
     }
+    public function userFav(){
+        return $this->hasMany(LibraryUserFav::class, "library_id", "id")->where("user_id",auth()->user()->id);
+
+    }
 }

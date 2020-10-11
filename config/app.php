@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Nov Nor Disk'),
 
     /*
     |--------------------------------------------------------------------------
@@ -188,7 +188,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\HelpersServiceProvider::class,
-        App\Providers\RepositoryServiceProvider::class
+        App\Providers\RepositoryServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
 
     ],
 

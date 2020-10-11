@@ -10,6 +10,7 @@ use App\Repositories\Eloquent\Event\EventRepository;
 use App\Repositories\Eloquent\EventAttend\EventAttendRepository;
 use App\Services\AttendEvent;
 use Illuminate\Http\Request;
+use App\Event as EventModel;
 
 class EventController extends Controller
 {
@@ -67,5 +68,9 @@ class EventController extends Controller
         $data['filter_by_date']=new EventCollection($filter_by_date);
 
         return $this->apiResponse($data, true, 200);
+    }
+    public function eventsHistory(EventModel $event){
+       $data=$event->where("event_date","<",date("Y-m-d"))->whereHas('userAppliedToThisEvent')->paginate();
+        return $this->apiResponse(new EventCollection($data), true, 200);
     }
 }

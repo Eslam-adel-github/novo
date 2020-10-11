@@ -31,7 +31,7 @@ class CategoryFaqController extends Controller
     public function index(CategoryFaqDataTables $dataTable)
     {
         return $dataTable->render("{$this->viewPath}.index", [
-            'title' => __('main.show-all') . ' ' . __('main.categories')." ". __('main.common_faq'),
+            'title' => __('main.show-all') . ' ' . __('main.faq')." ". __('main.categories'),
         ]);
     }
     /**
@@ -42,7 +42,7 @@ class CategoryFaqController extends Controller
     public function create()
     {
         return view("{$this->viewPath}.create", [
-            'title' => __('main.add')  . ' ' . __('main.category')." ". __('main.common_faq'),
+            'title' => __('main.add')  . ' ' . __('main.faq')." ". __('main.category'),
         ]);
     }
 
@@ -72,7 +72,7 @@ class CategoryFaqController extends Controller
         $show = $this->repository->find($id);
         if ($show) {
             return view("{$this->viewPath}.show", [
-                'title' => __('main.show') . ' ' . __('main.category')." ". __('main.common_faq'). ' : ' . VarByLang(getData(collect($show),"name")),
+                'title' => __('main.show') . ' ' . ' ' . __('main.faq')." ". __('main.category'). ' : ' . VarByLang(getData(collect($show),"name")),
                 'show' => $show,
             ]);
         }
@@ -89,7 +89,7 @@ class CategoryFaqController extends Controller
         $object = $this->repository->find($id);
         if ($object) {
             return view("{$this->viewPath}.edit", [
-                'title' => __('main.edit') . ' ' . ' ' . __('main.category')." ". __('main.common_faq'). ' : ' . VarByLang(getData(collect($object),"name")),
+                'title' => __('main.edit'). ' ' . __('main.faq')." ". __('main.categories'). ' : ' . VarByLang(getData(collect($object),"name")),
                 'edit' => $object,
             ]);
         }

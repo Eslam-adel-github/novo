@@ -8,26 +8,26 @@
         @endslot
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
-        <a href="{{ route('admin.category_common_faq.index') }}" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.categories') }} {{ __('main.common_faq') }}
+        <a href="{{ route('admin.faq_category.index') }}" class="kt-subheader__breadcrumbs-link">
+            {{ __('main.faq') }} {{ __('main.categories') }}
         </a>
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.category_common_faq.edit', [$show->id]) }}" class="kt-nav__link">
+                <a href="{{ route('admin.faq_category.edit', [$show->id]) }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-edit"></i>
-                    <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.category') }} {{ __('main.common_faq') }}</span>
+                    <span class="kt-nav__link-text">{{ __('main.edit') }} {{ __('main.faq') }} {{ __('main.category') }} </span>
                 </a>
             </li>
             <li class="kt-nav__item">
-                <a href="{{ route('admin.category_common_faq.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.faq_category.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
-                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.categories') }} {{ __('main.common_faq') }}</span>
+                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{ __('main.faq') }} {{ __('main.categories') }} </span>
                 </a>
             </li>
             <li class="kt-nav__item">
-                <a href="{{ route('admin.category_common_faq.create') }}" class="kt-nav__link">
+                <a href="{{ route('admin.faq_category.create') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-add"></i>
-                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.category') }} {{ __('main.common_faq') }}</span>
+                    <span class="kt-nav__link-text">{{ __('main.add_new') }} {{ __('main.faq') }} {{ __('main.category') }} </span>
                 </a>
             </li>
         @endslot

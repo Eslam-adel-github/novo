@@ -33,6 +33,10 @@ class RepositoryServiceProvider extends ServiceProvider
         \App\Repositories\Eloquent\Event\EventRepository::class=> \App\Repositories\Eloquent\Event\EloquantEventRepository::class,
         \App\Repositories\Eloquent\EventAttend\EventAttendRepository::class=> \App\Repositories\Eloquent\EventAttend\eloquantEventAttendRepository::class,
         \App\Repositories\Eloquent\CategeoryVideo\CategoryVideoRepository::class=> \App\Repositories\Eloquent\CategeoryVideo\EloquantCategoryVideoRepository::class,
+        \App\Repositories\Eloquent\Speciality\SpecialityRepository::class=> \App\Repositories\Eloquent\Speciality\EloquantSpecialityRepository::class,
+        \App\Repositories\Eloquent\LibraryFav\LibraryFavRepository::class=> \App\Repositories\Eloquent\LibraryFav\EloquantLibraryFavRepository::class,
+        \App\Repositories\Eloquent\Task\TaskRepository::class=> \App\Repositories\Eloquent\Task\EloquentTaskRepository::class,
+        \App\Repositories\Eloquent\WebSetings\WebsiteSettingRepository::class=> \App\Repositories\Eloquent\WebSetings\EloquentWebsiteSettingRepository::class,
 
     ];
 

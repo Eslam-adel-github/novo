@@ -104,13 +104,12 @@ class UserController extends Controller
             'phone'=>'required_without:email|exists:users,phone',
             'password'=>'required'
         ]);
-
         if (Auth::attempt($request->all())) {
             $token = Auth::user()->createToken(env('APP_KEY'))->accessToken;
         }
         else{
             return response()->json([
-                'message' => 'Unauthorized'
+                'message' => 'Error In Email OR Password'
             ], 401);
         }
         $user = $this->userRepository->instance()->where('id',Auth::id())->first();

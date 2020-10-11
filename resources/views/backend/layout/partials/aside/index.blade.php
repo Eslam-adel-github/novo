@@ -6,20 +6,42 @@
         <div id="kt_aside_menu" class="kt-aside-menu " data-ktmenu-vertical="1" data-ktmenu-scroll="1">
             <ul class="kt-menu__nav ">
 
-                    <li class="kt-menu__section ">
-                        <h4 class="kt-menu__section-text">
-                            {{ __("main.settings") }}
-                        </h4>
-                        <i class="kt-menu__section-icon flaticon-more-v2"></i>
-                    </li><!-- Group 1 -->
-                    <li class="kt-menu__item" aria-haspopup="true">
-                        <a href="#" class="kt-menu__link">
-                            <i class="kt-menu__link-icon fa fa-database"></i>
-                            <span class="kt-menu__link-text">{{ __('main.website_settings') }}</span>
-                        </a>
-                    </li>
-
-
+                <li class="kt-menu__section ">
+                    <h4 class="kt-menu__section-text">
+                        {{ __("main.links") }}
+                    </h4>
+                    <i class="kt-menu__section-icon flaticon-more-v2"></i>
+                </li><!-- Group 1 -->
+                <li class="kt-menu__item">
+                    <a href="{{ route('admin.users.index') }}" class="kt-menu__link">
+                        <i class="kt-menu__link-icon fa fa-user"></i>
+                        <span class="kt-menu__link-text">{{ __('main.users') }}</span>
+                    </a>
+                </li>
+                <li class="kt-menu__item ">
+                    <a href="{{ route('admin.video_library.index') }}" class="kt-menu__link">
+                        <i class="kt-menu__link-icon fa fa-video"></i>
+                        <span class="kt-menu__link-text">{{ __('main.youtube_video_hyper_link') }}</span>
+                    </a>
+                </li>
+                <li class="kt-menu__item">
+                    <a href="{{ route('admin.rethink_obesity.index') }}" class="kt-menu__link">
+                        <i class="kt-menu__link-icon fa fa-sitemap"></i>
+                        <span class="kt-menu__link-text">{{ __('main.rethink_obesity') }}</span>
+                    </a>
+                </li>
+                <li class="kt-menu__section ">
+                    <h4 class="kt-menu__section-text">
+                        {{ __("main.settings") }}
+                    </h4>
+                    <i class="kt-menu__section-icon flaticon-more-v2"></i>
+                </li><!-- Group 2 -->
+                <li class="kt-menu__item" aria-haspopup="true">
+                    <a href="{{ route('admin.website_settings.edit') }}" class="kt-menu__link">
+                        <i class="kt-menu__link-icon fa fa-database"></i>
+                        <span class="kt-menu__link-text">{{ __('main.website_settings') }}</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

@@ -18,6 +18,8 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
     public const HOME = 'admin';
 
+    public const AFTERRESETPASSWORD = 'afterResetPassword';
+
 
     /**
      * Define your route model bindings, pattern filters, etc.

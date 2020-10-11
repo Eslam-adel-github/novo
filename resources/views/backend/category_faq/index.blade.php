@@ -11,12 +11,12 @@
 
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
-        <a href="{{ route('admin.category_common_faq.index') }}" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.categories') }} {{__('main.common_faq')}}
+        <a href="{{ route('admin.faq_category.index') }}" class="kt-subheader__breadcrumbs-link">
+            {{__('main.faq')}} {{ __('main.categories') }}
         </a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
         <a href="#" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.show-all') }}  {{ __('main.categories') }} {{__('main.common_faq')}}
+            {{ __('main.show-all') }} {{__('main.faq')}} {{ __('main.categories') }}
         </a>
     @endcomponent
 @endsection
@@ -37,7 +37,7 @@
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
                             <div class="dropdown dropdown-inline">
-                                <a href="{{ route('admin.category_common_faq.create') }}" class="btn btn-brand btn-icon-sm">
+                                <a href="{{ route('admin.faq_category.create') }}" class="btn btn-brand btn-icon-sm">
                                     <i class="flaticon2-plus"></i> {{ __('main.add_new') }}
                                 </a>
                             </div>

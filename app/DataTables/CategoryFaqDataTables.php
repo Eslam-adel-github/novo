@@ -30,8 +30,8 @@ class CategoryFaqDataTables extends DataTable
                 return date("Y-m-d H:i:s",strtotime($model->created_at));
             })
             ->editColumn('actions',function($model){
-                $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'category_common_faq.show',[$model->id]), __('main.show'));
-                $edit    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-edit"></i></a>',route(config('system.admin.name').'category_common_faq.edit',[$model->id]), __('main.edit'));
+                $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'faq_category.show',[$model->id]), __('main.show'));
+                $edit    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-edit"></i></a>',route(config('system.admin.name').'faq_category.edit',[$model->id]), __('main.edit'));
                 $delete  = sprintf('<a data-id="'.$model->id.'" id="CategoryCommonFaqDelete_'.$model->id.'" class="CategoryCommonFaqDelete btn btn-sm btn-clean btn-icon btn-icon-md"  title="%s"><i class="la la-trash"></i></a>',__('main.delete'));
                 $delete.=sprintf('
                         <script defer>
@@ -67,11 +67,11 @@ class CategoryFaqDataTables extends DataTable
                     __('main.ask-delete') . VarByLang(getData(collect($model),"name")),
                     __('main.yes'),
                     __('main.no'),
-                    route(config('system.admin.name').'category_common_faq.destroy',[$model->id]),
+                    route(config('system.admin.name').'faq_category.destroy',[$model->id]),
                     __('main.success'),
                     __('main.deleted-message'),
-                    route('admin.category_common_faq.index'),
-                    route('admin.category_common_faq.index'),
+                    route('admin.faq_category.index'),
+                    route('admin.faq_category.index'),
                     __('main.canceled'),
                     __('main.no_data_deleted')
 

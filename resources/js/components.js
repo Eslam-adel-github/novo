@@ -13,6 +13,7 @@ Vue.component('input-component', require('./Components/inputs/InputComponent.vue
 
  */
 Vue.component('google-map', require('./Components/GoogleMap.vue').default);
+Vue.component('input-component', require('./Components/InputComponent.vue').default);
 
 
 

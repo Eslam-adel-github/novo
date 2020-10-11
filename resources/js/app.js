@@ -79,6 +79,8 @@ Vue.use(VueGoogleMaps, {
 });
 Vue.use(VeeValidate);
 Vue.component('google-map', require('./Components/GoogleMap.vue').default);
+Vue.component('input-component', require('./Components/InputComponent.vue').default);
+
 
 // import Select2Component
 import Select2 from './Components/Select2.vue';

@@ -37,6 +37,7 @@ class EventService
 
          $data=$request->all();
         $object_created = $this->repository->create($data);
+        //$object_created->userParticipateInEvent()->sync($data['doctors_id']);
 
         return $object_created;
     }

@@ -37,16 +37,16 @@
 
                         if (status == '') {
                             setTimeout(() => {
-                                window.location = "{{ route("admin.category_common_faq.index") }}";
+                                window.location = "{{ route("admin.faq_category.index") }}";
                             }, 1000)
 
                         } else if (status == "continue") {
                             setTimeout(() => {
-                                window.location = "{{ route("admin.category_common_faq.create") }}";
+                                window.location = "{{ route("admin.faq_category.create") }}";
                             }, 1000)
 
                         } else {
-                            var url = '{{ route("admin.category_common_faq.show", ":id") }}';
+                            var url = '{{ route("admin.faq_category.show", ":id") }}';
                             url = url.replace(':id', res.data.payload.id);
                             setTimeout(() => {
                                 window.location = url;

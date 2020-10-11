@@ -21,6 +21,9 @@ Route::middleware(\App\Http\Middleware\AdminMiddleware::class, \App\Http\Middlew
     });
 });
 */
+Route::get("afterResetPassword",function (){
+    return view('welcome');
+});
 Auth::routes(["register"=>false]);
 Route::redirect('/','admin',302);
 Route::redirect('admin','admin/dashboard',302);

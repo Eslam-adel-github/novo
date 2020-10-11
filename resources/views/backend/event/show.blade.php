@@ -206,7 +206,7 @@
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <td>{{ substr($show->agenda,0,50) }}</td>
+                                                    <td width="220px">{{trans('main.agenda_file')}} <i class="fa fa-arrow-right animated"></i></td>
                                                     <td>
                                                         <a href='{{ asset("uploads/$show->agenda") }}' id="{{ $show->agenda }}" class="btn btn-info btn-sm" download> <i class="fa fa-download"></i> </a>
                                                     </td>

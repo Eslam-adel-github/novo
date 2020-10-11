@@ -150,8 +150,28 @@ return [
     'videos_groups'=>"Videos Groups",
     'save_and_show'=>"Save and show",
     'video_library'=>"Video Library",
-    'video_library'=>"Video Library"
-    'video_library'=>"Video Library"
+    'video_library'=>"Video Library",
+    'video_library'=>"Video Library",
+    'specialty'=>"Specialty",
+    'specialties'=>"Specialties",
+    'type'=>"Type",
+    'links'=>"Links",
+    'roles'=>"Roles",
+    'event_planned'=>"Event Planned",
+    'agenda_file'=>"Agenda File",
+    'doctors_participations'=>"Doctors Participations",
+    'deleted'=>"Deleted",
+    'faild_delete'=>"Faild Delete",
+    'time'=>"Time",
+    'date'=>"Date",
+    "settings"=>"Settings",
+    "website_settings"=>"Website Settings",
+    "website_setting"=>"Website Setting",
+    "facebook"=>"Facebook",
+    "twitter"=>"Twitter",
+    "linkedin"=>"Linkedin",
+    'google_map_api_key'=>"Google Map Api Key",
+    'about_app'=>"About App"
 
 
 ];

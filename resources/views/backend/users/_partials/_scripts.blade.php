@@ -15,12 +15,22 @@
                 gender: '{{ getData($data, 'gender') }}',
                 from: "web",
                 type: '',
+                specialty_user_id:'{{ getData($data, 'specialty_id') }}',
                 @if ($action == 'edit')
-                _method: 'PATCH',
+                _method: 'PATCH'
                 @endif
             },
             isLoading: false,
             validation_errors: [],
+            specialties:[],
+            types: [
+                @foreach(getUsersType() as $key=>$value)
+                {
+                    id: '{{ $key }}',
+                    text: '{{$value}}',
+                },
+                @endforeach
+            ],
         },
         mounted: function () {
             @if($action=='edit')
@@ -28,6 +38,13 @@
             @else
                 this.fData.type = 2;
             @endif
+            if(!this.fData.gender){
+                this.fData.gender="male"
+            }
+            axios.get('{{ route('admin.specialty.all') }}').then((res) => {
+                this.specialties = res.data.payload;
+            });
+
         },
 
         methods: {

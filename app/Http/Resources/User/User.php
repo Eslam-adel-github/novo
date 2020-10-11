@@ -3,6 +3,7 @@
 namespace App\Http\Resources\User;
 
 use App\Http\Resources\Address\AddressCollection;
+use App\Http\Resources\Specialty\Specialty;
 use Illuminate\Http\Resources\Json\JsonResource;
 use App\Http\Resources\Role\RoleCollection;
 use App\Http\Resources\CarUsers\CarUsersCollection;
@@ -24,6 +25,7 @@ class User extends JsonResource
             'phone'=>$this->phone,
             'gender'=>$this->gender,
             //'image'=>$this->image??"",
+            "specaility"=>$this->specaility ?new Specialty($this->specaility):null,
             "lat"=>$this->lat??"",
             "lang"=>$this->lang??"",
             "prefered_contacts"=>$this->prefered_contacts??"",

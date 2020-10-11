@@ -13,7 +13,14 @@ function user_types()
 */
 function getParticipations(){
     return [
+        "public",
         "doctor",
-        "public"
+    ];
+}
+
+function getUsersType(){
+    return [
+        1=>"Admin",
+        2=>"HCP"
     ];
 }

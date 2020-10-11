@@ -10,19 +10,19 @@
 
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
-        <a href="{{ route('admin.category_common_faq.index') }}" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.categories') }} {{__('main.common_faq')}}
+        <a href="{{ route('admin.faq_category.index') }}" class="kt-subheader__breadcrumbs-link">
+            {{__('main.faq')}} {{ __('main.categories') }}
         </a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
         <a href="#" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.add') }}  {{ __('main.category') }} {{__('main.common_faq')}}
+            {{ __('main.add') }} {{__('main.faq')}} {{ __('main.category') }}
         </a>
 
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.category_common_faq.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.faq_category.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
-                    <span class="kt-nav__link-text">{{ __('main.show-all') }}  {{ __('main.categories') }} {{__('main.common_faq')}}</span>
+                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{__('main.faq')}}  {{ __('main.categories') }}</span>
                 </a>
             </li>
         @endslot
@@ -84,6 +84,6 @@
     @include('backend.category_faq._partials._scripts', [
         'action' => 'create',
         'data' => collect(old()),
-        'submitUrl' => route('admin.category_common_faq.store'),
+        'submitUrl' => route('admin.faq_category.store'),
     ])
 @endsection

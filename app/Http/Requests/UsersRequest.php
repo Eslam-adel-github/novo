@@ -34,7 +34,8 @@ class UsersRequest extends FormRequest
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'image' => ['nullable', 'string'],
             'gender' => ['required', 'in:male,female'],
-            'prefered_contacts'=>['nullable',"in:email,phone"]
+            'prefered_contacts'=>['nullable',"in:email,phone"],
+            'specialty_id'=>['sometimes','nullable','exists:specialties,id']
         ];
 
         if ($this->method() == 'PATCH') {

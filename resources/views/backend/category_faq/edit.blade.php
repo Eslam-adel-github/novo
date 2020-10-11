@@ -13,14 +13,14 @@
         @endslot
         <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
         <span class="kt-subheader__breadcrumbs-separator"></span>
-        <a href="{{ route('admin.category_common_faq.index') }}" class="kt-subheader__breadcrumbs-link">
-            {{ __('main.categories') }} {{ __('main.common_faq') }}
+        <a href="{{ route('admin.faq_category.index') }}" class="kt-subheader__breadcrumbs-link">
+            {{ __('main.faq') }} {{ __('main.categories') }}
         </a>
         @slot('toolbar')
             <li class="kt-nav__item">
-                <a href="{{ route('admin.category_common_faq.index') }}" class="kt-nav__link">
+                <a href="{{ route('admin.faq_category.index') }}" class="kt-nav__link">
                     <i class="kt-nav__link-icon flaticon-list-2"></i>
-                    <span class="kt-nav__link-text">{{ __('main.show-all') }} {{__('main.categories')}} {{__('main.common_faq')}}</span>
+                    <span class="kt-nav__link-text">{{ __('main.faq') }} {{ __('main.categories') }} </span>
                 </a>
             </li>
         @endslot
@@ -82,6 +82,6 @@
     @include('backend.category_faq._partials._scripts', [
         'action' => 'edit',
         'data' => collect($edit),
-        'submitUrl' => route('admin.category_common_faq.update', [$edit->id]),
+        'submitUrl' => route('admin.faq_category.update', [$edit->id]),
     ])
 @endsection

@@ -41,4 +41,8 @@ class Event extends Translatable
     {
         return $this->hasMany(AttendEvent::class, "event_id", "id");
     }
+    public function userParticipateInEvent()
+    {
+        return $this->belongsToMany(User::class,'attend_events',"event_id", "user_id");
+    }
 }

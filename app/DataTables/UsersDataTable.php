@@ -29,6 +29,9 @@ class UsersDataTable extends DataTable
             ->editColumn('created_at',function ($model){
                 return date("Y-m-d",strtotime($model->created_at));
             })
+            ->editColumn('type',function ($model){
+                return $model->type==1?"Admin":"HCP";
+            })
             ->editColumn('actions',function($model){
                 $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'users.show',[$model->id]), __('main.show'));
                 $edit    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-edit"></i></a>',route(config('system.admin.name').'users.edit',[$model->id]), __('main.edit'));
@@ -89,7 +92,7 @@ class UsersDataTable extends DataTable
      */
     public function query(User $model)
     {
-        return $model->where("type",2)->orderBy("id","desc")->newQuery();
+        return $model->orderBy("id","desc")->newQuery();
     }
 
     /**
@@ -104,7 +107,7 @@ class UsersDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->buttons($this->getButtons())
-                    ->parameters($this->getCustomBuilderParameters([1, 2,3, 4], [], GetLanguage() == 'ar'));
+                    ->parameters($this->getCustomBuilderParameters([1, 2,3, 5], [], GetLanguage() == 'ar'));
     }
 
     /**
@@ -119,6 +122,7 @@ class UsersDataTable extends DataTable
             Column::make('name', 'name')->title(trans('main.name')),
             Column::make('email', 'email')->title(trans('main.email')),
             Column::make('phone', 'phone')->title(trans('main.phone')),
+            Column::make('type', 'type')->title(trans('main.type')),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];

@@ -267,4 +267,8 @@ function getAppRoutes()
 
     return $routes;
 }
+function getSettingDataFromObject(Collection $data, $attr, $lang)
+{
+    return $data->has($attr) ? $data[$attr] ? $data[$attr][$lang]: null : null;
+}
 

@@ -13,7 +13,7 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
     Route::resource('/video_library', 'Resource\YoutubeVideoController');
     //Route::resource('/video_library', 'Resource\YoutubeVideoController');
     Route::resource('/category_library', 'Resource\CategoryLibraryController');
-    Route::resource('/category_common_faq', 'Resource\CategoryFaqController');
+    Route::resource('/faq_category', 'Resource\CategoryFaqController');
     Route::resource('/faq', 'Resource\FaqController');
     Route::get('/category_faq_all', 'SAC\GetAllCategoryFaq')->name('category_faq.all');
     Route::resource('/library', 'Resource\LibraryController');
@@ -30,6 +30,7 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
     Route::get('/templete_event_single/{parameter}', 'SAC\GetSingleTempleteEvent')->name('get_templete_event.single');
 
     Route::resource('/video_group', 'Resource\CategoryVideoController');
+    Route::resource('/specialty', 'Resource\SpecialityController');
     //Route::resource('/category_video', 'Resource\CategoryVideoController');
 
     Route::get('/category_video_all', 'SAC\GetAllCategoryVideo')->name('category_video.all');
@@ -41,6 +42,11 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
 
     Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');
     Route::get('calendar', 'SAC\Calendar')->name("calendar");
+    Route::get('/specialty_all', 'SAC\GetAllSpecialty')->name('specialty.all');
+    Route::get('get_user_by_speciality/{id}','SAC\GetAllUserBySpecialty')->name('users.speciality');
+
+    Route::get('/website_setting/edit', 'Resource\WebsiteSettingsController@edit')->name('website_settings.edit');
+    Route::patch('/website_setting/store', 'Resource\WebsiteSettingsController@store')->name('website_settings.store');
 
 
     //Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');

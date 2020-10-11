@@ -18,28 +18,7 @@
                 </a>
             </li>
 
-            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/users') }}"
-                data-ktmenu-submenu-toggle="click" aria-haspopup="true">
-                <a href="{{ route('admin.users.index') }}" class="kt-menu__link">
-                    <span class="kt-menu__link-text">{{ __('main.users') }}</span>
-                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
-                </a>
-            </li>
-            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/video_library') }}"
-                data-ktmenu-submenu-toggle="click" aria-haspopup="true">
-                <a href="{{ route('admin.video_library.index') }}" class="kt-menu__link">
-                    <span class="kt-menu__link-text">{{ __('main.youtube_video_hyper_link') }}</span>
-                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
-                </a>
-            </li>
-            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ is_active('admin/rethink_obesity') }}"
-                data-ktmenu-submenu-toggle="click" aria-haspopup="true">
-                <a href="{{ route('admin.rethink_obesity.index') }}" class="kt-menu__link">
-                    <span class="kt-menu__link-text">{{ __('main.rethink_obesity') }}</span>
-                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
-                </a>
-            </li>
-            <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click"
+            <li  class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click"
                 aria-haspopup="true">
                 <a href="javascript:" class="kt-menu__link kt-menu__toggle">
                         <span class="kt-menu__link-text">
@@ -50,15 +29,21 @@
                 <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
                     <ul class="kt-menu__subnav">
                         <li class="kt-menu__item " aria-haspopup="true">
+                            <a href="{{ route('admin.specialty.index') }}" class="kt-menu__link">
+                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                <span class="kt-menu__link-text">{{ trans('main.specialties') }} </span>
+                            </a>
+                        </li>
+                        <li class="kt-menu__item " aria-haspopup="true">
                             <a href="{{ route('admin.video_group.index') }}" class="kt-menu__link">
                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
                                 <span class="kt-menu__link-text">{{ trans('main.video_group') }} </span>
                             </a>
                         </li>
                         <li class="kt-menu__item " aria-haspopup="true">
-                            <a href="{{ route('admin.category_common_faq.index') }}" class="kt-menu__link">
+                            <a href="{{ route('admin.faq_category.index') }}" class="kt-menu__link">
                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
-                                <span class="kt-menu__link-text">{{ trans('main.categories') }} {{ trans('main.common_faq') }}</span>
+                                <span class="kt-menu__link-text">{{ trans('main.faq') }} {{ trans('main.categories') }} </span>
                             </a>
                         </li>
                         <li class="kt-menu__item " aria-haspopup="true">
