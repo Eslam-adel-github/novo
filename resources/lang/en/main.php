@@ -171,7 +171,21 @@ return [
     "twitter"=>"Twitter",
     "linkedin"=>"Linkedin",
     'google_map_api_key'=>"Google Map Api Key",
-    'about_app'=>"About App"
+    'about_app'=>"About App",
+    'invite'=>"Invite",
+    'to'=>"To",
+    'choose_by'=>"Choose By",
+    'doctors'=>"Choose Doctors",
+    'invite'=>"Invite",
+    'invites'=>"Invites",
+    'registers'=>"Registers",
+    'status'=>"Status",
+    'ask-change_event_sataus'=>"Are you sure that you want to Change User Event Status",
+    'no_action_needed'=>"No Action Taked",
+    'status_successfull_change'=>"Status Change Successfully",
+    'no_action_taked'=>"No Action Taked",
+    'change_user_event_status'=>"Change User Event Status",
+    'faq_category'=>"Faq Category"
 
 
 ];

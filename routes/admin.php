@@ -48,6 +48,15 @@ Route::middleware([AdminMiddleware::class, LanguageMiddleware::class])->group(fu
     Route::get('/website_setting/edit', 'Resource\WebsiteSettingsController@edit')->name('website_settings.edit');
     Route::patch('/website_setting/store', 'Resource\WebsiteSettingsController@store')->name('website_settings.store');
 
+    Route::get('show_invite_to_event/{event_id}','Resource\InviteController@index')->name('show_invite_to_event');
+    Route::get('add_invite_to_event/{event_id}','Resource\InviteController@create')->name('add_invite_to_event');
+    Route::post('store_invite_to_event','Resource\InviteController@store')->name('store_invite_to_event');
+
+    Route::get('show_register_to_event/{event_id}','SAC\RegisterEventController')->name('show_register_to_event');
+
+    Route::get('get_all_doctors','SAC\GetAllDoctors')->name('get_all_doctors');
+
+    Route::post('change_user_event_status/{id}','SAC\ChangeUserEventStatus')->name('change.user.event.satatus');
 
     //Route::get('/quick_search', 'SAC\QuickSearch')->name('quick_search');
 

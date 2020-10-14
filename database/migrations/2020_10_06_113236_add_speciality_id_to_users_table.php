@@ -14,8 +14,8 @@ class AddSpecialityIdToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger("specialty_user_id")->nullable();
-            $table->foreign("specialty_user_id")->references('id')->on('event_types')->onDelete('set null');
+            $table->unsignedBigInteger("specialty_id")->nullable();
+            $table->foreign("specialty_id")->references('id')->on('specialties')->onDelete('set null');
         });
     }
 

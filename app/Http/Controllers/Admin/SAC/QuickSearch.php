@@ -21,7 +21,9 @@ class QuickSearch extends Controller
         $routes = [];
 
         foreach (getAppRoutes() as $route) {
-            $routes[] = $route->action['as'];
+            if($route->action['as'] !='api.tasks.index') {
+                $routes[] = $route->action['as'];
+            }
         }
         $results  = preg_grep('/'.$query.'/i', $routes);
         return view('backend.layout.partials.header-topbar.partials._quick_search_results', [

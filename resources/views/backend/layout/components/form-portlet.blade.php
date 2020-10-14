@@ -14,7 +14,7 @@
                     <div class="btn-group submitBtnContainer">
                         <button type="button" class="btn btn-brand" style="color: #fff" id="save_btn" {{ $vueEvents ?? '' }}>
                             <i class="la la-check"></i>
-                            <span class="kt-hidden-mobile">{{ __('main.save') }}</span>
+                            <span class="kt-hidden-mobile">{{$button_name?? __('main.save') }}</span>
                         </button>
                         {{ $actions }}
                     </div>

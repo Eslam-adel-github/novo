@@ -30,4 +30,17 @@ class ResetPasswordController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::AFTERRESETPASSWORD;
 
+    protected function resetPassword($user, $password)
+    {
+        $this->setUserPassword($user, $password);
+
+        $user->setRememberToken(Str::random(60));
+
+        $user->save();
+
+        event(new PasswordReset($user));
+
+        //$this->guard()->login($user);
+    }
+
 }

@@ -233,15 +233,48 @@
                             <div class="kt-portlet__body">
                                 <div class="kt-portlet__head-toolbar">
                                     <div class="dropdown dropdown-inline">
-                                        @if($show->numberOfAttendance()->count()>0)
-                                            <h3 style="text-align: center">
-                                                <i class="fa fa-user"></i> {{$show->numberOfAttendance()->count()}}
-                                            </h3>
-                                        @else
-                                            <p style="text-align: center">
-                                                {{trans('main.no_participation')}}
-                                            </p>
-                                        @endif
+                                        <div title="{{ __('main.attendance') }}" >
+                                            @if($show->numberOfAttendance()->count()>0)
+                                                <h3 style="text-align: center">
+                                                    <i class="fa fa-user"></i> {{$show->numberOfAttendance()->where('status','accepted')->count()}}
+                                                </h3>
+                                            @else
+                                                <p style="text-align: center">
+                                                    {{trans('main.no_participation')}}
+                                                </p>
+                                            @endif
+                                        </div>
+                                        <div class="">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col"> {{ __('main.invites') }}</th>
+                                                    <th scope="col"> {{ __('main.registers') }}</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="150px">
+                                                           # {{$show->numberOfAttendance()->where('type','invited')->count()}}
+                                                        </td>
+                                                        <td>
+                                                           # {{$show->numberOfAttendance()->where('type','registerd')->count()}}
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="{{route("admin.show_invite_to_event",['event_id'=>$show->id])}}" class="btn btn-brand">{{trans('main.show')}} {{trans('main.invites')}}</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="{{route("admin.show_register_to_event",['event_id'=>$show->id])}}" class="btn btn-brand">{{trans('main.show')}} {{trans('main.registers')}}</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -20,7 +20,13 @@ function getParticipations(){
 
 function getUsersType(){
     return [
-        1=>"Admin",
+        0=>"Admin",
         2=>"HCP"
+    ];
+}
+function getInvitedTypes(){
+    return [
+        "Specialty"=>"Specialty",
+        "Specific Doctors"=>"Specific Doctors"
     ];
 }

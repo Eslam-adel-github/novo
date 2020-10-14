@@ -30,7 +30,28 @@ class UsersDataTable extends DataTable
                 return date("Y-m-d",strtotime($model->created_at));
             })
             ->editColumn('type',function ($model){
-                return $model->type==1?"Admin":"HCP";
+                return $model->type==0?"Admin":"HCP";
+            })
+            ->editColumn('user.specaility.name',function ($model){
+                return $model->specaility ?VarByLang(getData(collect($model->specaility),'name')):"N/A";
+            })
+            ->filterColumn('user.specaility.name',function ($query,$keyword){
+                return $query->where('specialties.name','Like',"%".$keyword."%");
+            })
+            ->filterColumn('type',function ($query,$keyword){
+                $user_type=0;
+                $search=false;
+                if(strtolower($keyword)==strtolower("HCP")){
+                    $user_type=2;
+                    $search=true;
+                }
+                elseif(strtolower($keyword)== strtolower("Admin")){
+                    $user_type=0;
+                    $search=true;
+                }
+                return $query->when($search,function($query) use ($user_type){
+                    return $query->where('users.type',$user_type);
+                });
             })
             ->editColumn('actions',function($model){
                 $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'users.show',[$model->id]), __('main.show'));
@@ -92,7 +113,8 @@ class UsersDataTable extends DataTable
      */
     public function query(User $model)
     {
-        return $model->orderBy("id","desc")->newQuery();
+        return $model->leftJoin('specialties', 'users.specialty_id', '=', 'specialties.id')->select('users.*','specialties.name as specialties_name')->orderBy("users.id","desc")->newQuery();
+        //with('specaility')->orderBy("id","desc")->newQuery();
     }
 
     /**
@@ -107,7 +129,7 @@ class UsersDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->buttons($this->getButtons())
-                    ->parameters($this->getCustomBuilderParameters([1, 2,3, 5], [], GetLanguage() == 'ar'));
+                    ->parameters($this->getCustomBuilderParameters([1, 2,3,4,5], [], GetLanguage() == 'ar'));
     }
 
     /**
@@ -121,7 +143,8 @@ class UsersDataTable extends DataTable
             Column::computed('checkbox', $this->getTitleCheckboxHtml())->width(15)->printable(false),
             Column::make('name', 'name')->title(trans('main.name')),
             Column::make('email', 'email')->title(trans('main.email')),
-            Column::make('phone', 'phone')->title(trans('main.phone')),
+            Column::make('phone', 'phone')->title(trans('main.phone')),//specaility
+            Column::make('user.specaility.name', 'user.specaility.name')->title(trans('main.specialty')),
             Column::make('type', 'type')->title(trans('main.type')),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),

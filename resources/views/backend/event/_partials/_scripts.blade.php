@@ -26,7 +26,6 @@
                 address:$('input[name=h_address]').val() == '' ? {} : JSON.parse($('input[name=h_address]').val()),
                 tags: $('input[name=tags]').val() != '' ? JSON.parse($('input[name=tags]').val()) : [],
                 event_date:"{{getData($data,"event_date")}}",
-                doctors_id:[],
                 @if ($action == 'edit')
                     _method: 'PATCH',
                 @endif
@@ -48,8 +47,6 @@
                 },
                 @endforeach
             ],
-            doctorsParticiptions:[]
-
         },
         mounted:function(){
             axios.get('{{ route('admin.events_type.all') }}').then((res) => {
@@ -154,11 +151,6 @@
             submitForm (status) {
                 this.isLoading = true;
                 $('.submitBtnContainer #save_btn').attr("class", "btn btn-brand kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light").attr("disabled", this.isLoading);
-                if(this.fData.participation=="public"){
-                    this.fData.doctors_id=this.doctorsParticiptions.map(function($object){
-                        return $object.id
-                    })
-                }
                 this.Save(status)
             },
             Save(status){

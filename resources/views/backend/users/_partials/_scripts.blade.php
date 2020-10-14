@@ -15,7 +15,7 @@
                 gender: '{{ getData($data, 'gender') }}',
                 from: "web",
                 type: '',
-                specialty_user_id:'{{ getData($data, 'specialty_id') }}',
+                specialty_id:'{{ getData($data, 'specialty_id') }}',
                 @if ($action == 'edit')
                 _method: 'PATCH'
                 @endif

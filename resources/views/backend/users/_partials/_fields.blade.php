@@ -67,7 +67,7 @@ $vendor_control=["cars",'spare parts','tools'];
         <div v-if="fData.type==2" class="form-group row" :class="{'validated' : errors.has('specialty_user_id')}">
             <label class="col-3 col-form-label">{{ __('main.specialty') }}</label>
             <div class="col-9">
-                <select2 v-validate="'required'" :name="'specialty_user_id'" v-model="fData.specialty_user_id" :options="specialties" :form_errors="errors"  data-vv-as="{{ trans('main.specialty') }}" :settings="{placeholder: '{{ __('main.specialty') }}'}" ></select2>
+                <select2 v-validate="'required'" :name="'specialty_id'" v-model="fData.specialty_id" :options="specialties" :form_errors="errors"  data-vv-as="{{ trans('main.specialty') }}" :settings="{placeholder: '{{ __('main.specialty') }}'}" ></select2>
             </div>
         </div>
 

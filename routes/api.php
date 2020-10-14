@@ -46,6 +46,6 @@ Route::get("/user/fav","LibraryFavController@index");
 Route::post("/user/fav","LibraryFavController@store");
 Route::apiResource("tasks","TaskController");
 Route::get("/specialty","SpecialtyController");
-Route::get("/about_app","Websettings");
+Route::get("/about_app","WebSettings");
 
 
