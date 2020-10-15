@@ -123,7 +123,7 @@ return [
     'event_templete_description'   =>"Here You Can Show All The Event Templete",
     'event_type_description'        =>"Here You Can Show All The Event Type",
     'envents_quick_actions'         =>"Events Quick Actions",
-    'category_common_faq_description'=>"Here You Can Show All The Category Faq",
+    'faq_category_description'=>"Here You Can Show All The Faq Category",
     'faq_description'                =>"Here You Can Show All  Faqs",
     'library_description'            =>"Here You Can Show All Library",
     'category_library_description'   =>"Here You Can Show All The Category Library",

@@ -3,25 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AttendEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AttendEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/EventParticipationDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/EventParticipationDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/InvitesDataTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/RegisterdEventDataTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/enums.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/enums.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Resource/InviteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Resource/InviteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SAC/ChangeUserEventStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SAC/ChangeUserEventStatus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/SendInvitesNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/SendInvitesNotification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/AttendEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/AttendEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/InviteToEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/InviteToEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.zip" beforeDir="false" afterPath="$PROJECT_DIR$/config.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_143517_add_some_coloum_to_attend_events.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_143517_add_some_coloum_to_attend_events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/emails/invites/invite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/emails/invites/invite.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.zip" beforeDir="false" afterPath="$PROJECT_DIR$/routes.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/cards/faq_library.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/cards/faq_library.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/_partials/_fields.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -755,6 +739,8 @@
       <workItem from="1602758017518" duration="1787000" />
       <workItem from="1602760160565" duration="1146000" />
       <workItem from="1602763228579" duration="1735000" />
+      <workItem from="1602766426998" duration="546000" />
+      <workItem from="1602770489116" duration="590000" />
     </task>
     <servers />
   </component>
@@ -786,10 +772,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594571780118" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1602763245109">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1602770501738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1602763245109" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1602770501738" />
     <state x="339" y="227" width="800" height="478" key="find.popup" timestamp="1602764597576">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
