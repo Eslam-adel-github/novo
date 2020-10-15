@@ -233,10 +233,10 @@
                             <div class="kt-portlet__body">
                                 <div class="kt-portlet__head-toolbar">
                                     <div class="dropdown dropdown-inline">
-                                        <div title="{{ __('main.attendance') }}" >
+                                        <div title="{{ __('main.attendance') }} {{ __('main.accepted') }}" >
                                             @if($show->numberOfAttendance()->count()>0)
                                                 <h3 style="text-align: center">
-                                                    <i class="fa fa-user"></i> {{$show->numberOfAttendance()->where('status','accepted')->count()}}
+                                                    {{ __('main.attendance') }} {{ __('main.accepted') }} : <i class="fa fa-user"></i> {{$show->numberOfAttendance()->where('status','accepted')->count()}}
                                                 </h3>
                                             @else
                                                 <p style="text-align: center">

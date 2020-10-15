@@ -48,8 +48,9 @@ class SendInvitesNotification extends Notification implements ShouldQueue
      */
     public function toMail($notifiable)
     {
+        $this->event->user_name=$notifiable->name;
         return (new MailMessage)
-            ->subject('Invoice Paid')
+            ->subject('Invite For Event')
             ->markdown('backend.emails.invites.invite', ['event' =>$this->event]);
     }
 

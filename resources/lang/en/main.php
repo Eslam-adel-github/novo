@@ -185,7 +185,9 @@ return [
     'status_successfull_change'=>"Status Change Successfully",
     'no_action_taked'=>"No Action Taked",
     'change_user_event_status'=>"Change User Event Status",
-    'faq_category'=>"Faq Category"
+    'faq_category'=>"Faq Category",
+    'select'=>"Select",
+    'accepted'=>"Accepted"
 
 
 ];

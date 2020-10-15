@@ -41,10 +41,10 @@ class InviteToEvent
            $object=$event->userParticipateInEvent()->sync($users_id);
         }
         else{
-            $users=$this->userRepository->instance()->where("id",$data['doctors_id'])->get();
-
+            $users=$this->userRepository->instance()->whereIn("id",$data['doctors_id'])->get();
             $object=$event->userParticipateInEvent()->where('type','invited')->sync($data['doctors_id']);
         }
+
         event(new SendInvitEnvent($users,$event));
 
         return $object;

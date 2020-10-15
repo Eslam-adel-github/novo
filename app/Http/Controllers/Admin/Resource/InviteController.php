@@ -26,7 +26,7 @@ class InviteController extends Controller
     public function index(EventParticipationDataTable $dataTable,$event_id){
         //return User::whereHas('userEvents')->get();
         $event_name=$this->repository->find($event_id)?VarByLang(getData(collect($this->repository->find($event_id)),"event_name")):"";
-        $dataTable->data_model=$this->userRepository->instance()->whereHas('userEventsInvite')->with('userEventsInvite.event');
+        $dataTable->data_model=$this->userRepository->instance()->whereHas('userEventsInvite')->with(['userEventsInvite.event','specaility']);
         //return $dataTable->data_model->get();
         return $dataTable->render("{$this->viewPath}.index", [
             'title' => __('main.show-all') . ' ' . __('main.invites')." ".__('main.to')." ".$event_name,

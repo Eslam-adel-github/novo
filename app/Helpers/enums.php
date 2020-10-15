@@ -30,3 +30,9 @@ function getInvitedTypes(){
         "Specific Doctors"=>"Specific Doctors"
     ];
 }
+function getInviteStatus(){
+    return [
+        "accepted"=>"Accepted",
+        "rejected"=>"Rejected"
+    ];
+}

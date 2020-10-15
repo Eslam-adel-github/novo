@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\User;
+use Illuminate\Support\Facades\Route;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Html\Editor\Editor;
@@ -30,6 +31,14 @@ class EventParticipationDataTable extends DataTable
             ->editColumn('created_at',function ($model){
                 return date("Y-m-d",strtotime($model->created_at));
             })
+            ->editColumn('specaility',function ($model){
+                return $model->specaility?VarByLang(getData(collect($model->specaility),"name")):"N/A";
+            })
+            ->filterColumn('specaility',function ($query,$keyword){
+                 return $query->whereHas('specaility',function ($query_inside) use($keyword){
+                    return $query_inside->where("name",'like',"%".$keyword."%");
+                });
+            })
             ->editColumn('type',function ($model){
                 if(isset($model->userEventsRegister) && count($model->userEventsRegister)>0){
                     return $model->userEventsRegister[0]?$model->userEventsRegister[0]->type:"";
@@ -37,6 +46,17 @@ class EventParticipationDataTable extends DataTable
                 else{
                     return $model->userEventsInvite[0]?$model->userEventsInvite[0]->type:"";
                 }
+
+            })
+            ->filterColumn('type',function ($query,$keyword){
+                if(Route::currentRouteName()=='admin.show_invite_to_event'){
+                    return $query->whereHas('userEventsInvite',function ($query_inside) use($keyword){
+                        return $query_inside->where("type",'like',"%".$keyword."%");
+                    });
+                }
+                return $query->whereHas('userEventsRegister',function ($query_inside) use($keyword){
+                    return $query_inside->where("type",'like',"%".$keyword."%");
+                });
 
             })
             ->editColumn('status',function ($model){
@@ -48,6 +68,17 @@ class EventParticipationDataTable extends DataTable
                 }
 
             })
+            ->filterColumn('status',function ($query,$keyword){
+                if(Route::currentRouteName()=='admin.show_invite_to_event'){
+                    return $query->whereHas('userEventsInvite',function ($query_inside) use($keyword){
+                        return $query_inside->where("status",'like',"%".$keyword."%");
+                    });
+                }
+                return $query->whereHas('userEventsRegister',function ($query_inside) use($keyword){
+                    return $query_inside->where("status",'like',"%".$keyword."%");
+                });
+
+            })
             ->editColumn('event_date',function ($model){
                 if(isset($model->userEventsRegister) && count($model->userEventsRegister)>0){
                     return $model->userEventsRegister[0]?$model->userEventsRegister[0]->event->event_date:"";
@@ -55,6 +86,17 @@ class EventParticipationDataTable extends DataTable
                 else{
                     return $model->userEventsInvite[0]?$model->userEventsInvite[0]->event->event_date:"";
                 }
+
+            })
+            ->filterColumn('event_date',function ($query,$keyword){
+                if(Route::currentRouteName()=='admin.show_invite_to_event'){
+                    return $query->whereHas('userEventsInvite.event',function ($query_inside) use($keyword){
+                        return $query_inside->where("event_date",'like',"%".$keyword."%");
+                    });
+                }
+                return $query->whereHas('userEventsRegister.event',function ($query_inside) use($keyword){
+                    return $query_inside->where("event_date",'like',"%".$keyword."%");
+                });
 
             })
             ->editColumn('actions',function($model){
@@ -137,7 +179,12 @@ class EventParticipationDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->buttons($this->getButtons())
-                    ->parameters($this->getCustomBuilderParameters([1, 2,3], [], GetLanguage() == 'ar'));
+                    ->parameters($this->getCustomBuilderParameters([1, 2,3,4,6], [
+                        [
+                            'index_num' => 6,
+                            'selectValues' => getInviteStatus()
+                        ],
+                    ], GetLanguage() == 'ar'));
     }
 
     /**
@@ -152,9 +199,10 @@ class EventParticipationDataTable extends DataTable
             Column::make('name', 'name')->title(trans('main.name')),
             Column::make('email', 'email')->title(trans('main.email')),
             Column::make('phone', 'phone')->title(trans('main.phone')),
-            Column::make('type', 'type')->title(trans('main.type')),
-            Column::make('status', 'users.relation.status')->title(trans('main.status')),
-            Column::make('event_date', 'users.relation.event.event_date')->title(trans('main.event_date')),
+            Column::make('specaility', 'specaility')->title(trans('main.specialty'))->orderable(false),
+            Column::make('type', 'type')->title(trans('main.type'))->orderable(false),
+            Column::make('status', 'status')->title(trans('main.status'))->width(100)->orderable(false),
+            Column::make('event_date', 'event_date')->title(trans('main.event_date'))->orderable(false),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];
     }

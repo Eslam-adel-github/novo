@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="kt-iconbox__desc">
                                     <h3 class="kt-iconbox__title">
-                                        <a class="kt-link" href="{{ route('admin.category_common_faq.index') }}">{{ trans('main.categories') }} {{ trans('main.common_faq') }}</a>
+                                        <a class="kt-link" href="{{ route('admin.faq_category.index') }}">{{ trans('main.categories') }} {{ trans('main.common_faq') }}</a>
                                     </h3>
                                     <div class="kt-iconbox__content">
                                         {{ __('main.category_common_faq_description') }}

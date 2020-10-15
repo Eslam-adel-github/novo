@@ -32,10 +32,10 @@ class UsersDataTable extends DataTable
             ->editColumn('type',function ($model){
                 return $model->type==0?"Admin":"HCP";
             })
-            ->editColumn('user.specaility.name',function ($model){
-                return $model->specaility ?VarByLang(getData(collect($model->specaility),'name')):"N/A";
+            ->editColumn('specialties_name',function ($model){
+                return $model->specialties_name ?VarByLang($model->specialties_name,'en'):"N/A";
             })
-            ->filterColumn('user.specaility.name',function ($query,$keyword){
+            ->filterColumn('specialties_name',function ($query,$keyword){
                 return $query->where('specialties.name','Like',"%".$keyword."%");
             })
             ->filterColumn('type',function ($query,$keyword){
@@ -49,9 +49,20 @@ class UsersDataTable extends DataTable
                     $user_type=0;
                     $search=true;
                 }
+                elseif($keyword==0){
+                    $search=true;
+                    $user_type=$keyword;
+                }
+                elseif($keyword==2){
+                    $search=true;
+                    $user_type=$keyword;
+                }
+                return $query->where('users.type',$user_type);
+                /*
                 return $query->when($search,function($query) use ($user_type){
                     return $query->where('users.type',$user_type);
                 });
+                */
             })
             ->editColumn('actions',function($model){
                 $view    = sprintf('<a href="%s" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="%s"><i class="la la-eye"></i></a>',route(config('system.admin.name').'users.show',[$model->id]), __('main.show'));
@@ -129,7 +140,12 @@ class UsersDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->buttons($this->getButtons())
-                    ->parameters($this->getCustomBuilderParameters([1, 2,3,4,5], [], GetLanguage() == 'ar'));
+                    ->parameters($this->getCustomBuilderParameters([1, 2,3,4,5], [
+                        [
+                            'index_num' => 5,
+                            'selectValues' => getUsersType()
+                        ],
+                    ], GetLanguage() == 'ar'));
     }
 
     /**
@@ -144,8 +160,8 @@ class UsersDataTable extends DataTable
             Column::make('name', 'name')->title(trans('main.name')),
             Column::make('email', 'email')->title(trans('main.email')),
             Column::make('phone', 'phone')->title(trans('main.phone')),//specaility
-            Column::make('user.specaility.name', 'user.specaility.name')->title(trans('main.specialty')),
-            Column::make('type', 'type')->title(trans('main.type')),
+            Column::make('specialties_name', 'specialties_name')->title(trans('main.specialty')),
+            Column::make('type', 'type')->title(trans('main.type'))->width(70),
             Column::make('created_at', 'created_at')->title(trans('main.created_at')),
             Column::make('actions', 'actions')->title(trans('main.actions'))->searchable(false)->orderable(false)->printable(false),
         ];

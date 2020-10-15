@@ -27,6 +27,8 @@ class AttendEvent
     {
         $data = $request->all();
 
+        $data['type']='registerd';
+
         $object_created = $this->repository->create($data);
 
         return $object_created;

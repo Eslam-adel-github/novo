@@ -19,7 +19,7 @@ class ChangeUserEventStatus extends Controller
         $object=$repository->find($id);
          //dd($object);
         if($object->status=="accepted"){
-            $data['status']='regected';
+            $data['status']='rejected';
         }
         else{
             $data['status']='accepted';

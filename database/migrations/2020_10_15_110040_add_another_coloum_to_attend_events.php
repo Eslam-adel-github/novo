@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddSomeColoumToAttendEvents extends Migration
+class AddAnotherColoumToAttendEvents extends Migration
 {
     /**
      * Run the migrations.
@@ -16,7 +16,6 @@ class AddSomeColoumToAttendEvents extends Migration
         Schema::table('attend_events', function (Blueprint $table) {
             $table->enum('type',['registerd','invited'])->default('invited');
             $table->enum('status',['accepted','rejected'])->default('accepted');
-
         });
     }
 
