@@ -47,7 +47,7 @@ class UserController extends Controller
     public function store(UsersRequest $request)
     {
         $request["password"]=Hash::make($request['password']);
-        $request['type']=2;
+        $request['type']=1;
         $user = $this->userService->store($request);
         if ($user) {
             Auth::login($user);

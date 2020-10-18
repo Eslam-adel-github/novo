@@ -21,6 +21,7 @@ function getParticipations(){
 function getUsersType(){
     return [
         0=>"Admin",
+        1=>"Registered",
         2=>"HCP"
     ];
 }

@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="325d20ef-69dc-4b93-a33f-24898947de39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/enums.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/enums.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/cards/faq_library.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/cards/faq_library.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/home/_partials/statistics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/home/_partials/statistics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-menu/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_quick_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/partials/header-topbar/partials/_quick_actions.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/users/_partials/_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/_partials/_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +187,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../elbadry" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -740,7 +747,10 @@
       <workItem from="1602760160565" duration="1146000" />
       <workItem from="1602763228579" duration="1735000" />
       <workItem from="1602766426998" duration="546000" />
-      <workItem from="1602770489116" duration="590000" />
+      <workItem from="1602770489116" duration="915000" />
+      <workItem from="1603029681233" duration="1693000" />
+      <workItem from="1603031811331" duration="1644000" />
+      <workItem from="1603033942242" duration="1317000" />
     </task>
     <servers />
   </component>
@@ -772,10 +782,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594571780118" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1602770501738">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1603031817992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1602770501738" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1603031817992" />
     <state x="339" y="227" width="800" height="478" key="find.popup" timestamp="1602764597576">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

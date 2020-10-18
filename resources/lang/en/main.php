@@ -187,7 +187,9 @@ return [
     'change_user_event_status'=>"Change User Event Status",
     'faq_category'=>"Faq Category",
     'select'=>"Select",
-    'accepted'=>"Accepted"
+    'accepted'=>"Accepted",
+    'cards'=>"Cards",
+    'videos'=>"Videos"
 
 
 ];

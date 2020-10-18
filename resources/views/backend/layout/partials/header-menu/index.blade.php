@@ -64,6 +64,7 @@
                                 <span class="kt-menu__link-text">{{ trans('main.library') }}</span>
                             </a>
                         </li>
+                        {{--
                         <li class="kt-menu__item " aria-haspopup="true">
                             <a href="{{ route('admin.HCP.index') }}" class="kt-menu__link">
                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
@@ -76,6 +77,7 @@
                                 <span class="kt-menu__link-text">{{ trans('main.pharmacies') }}</span>
                             </a>
                         </li>
+                        --}}
                         <li class="kt-menu__item " aria-haspopup="true">
                             <a href="{{ route('admin.event_type.index') }}" class="kt-menu__link">
                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>

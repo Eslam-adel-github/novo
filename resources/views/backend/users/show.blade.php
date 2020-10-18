@@ -96,7 +96,13 @@
                         </div>
                         <div class="col-md-6">
                             <strong>{{ __('main.type') }}: </strong>
-                            {{ $show->type==1? "Admin":"HCP" }}
+                            @if($show->type==0)
+                                Admin
+                            @elseif($show->type==1)
+                                Registered
+                            @else
+                                HCP
+                            @endif
                             <br><hr>
                         </div>
                         @if($show->type==2)

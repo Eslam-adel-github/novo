@@ -30,7 +30,14 @@ class UsersDataTable extends DataTable
                 return date("Y-m-d",strtotime($model->created_at));
             })
             ->editColumn('type',function ($model){
-                return $model->type==0?"Admin":"HCP";
+                if($model->type==0){
+                    return "Admin";
+                }
+                elseif ($model->type==1){
+                    return "Registered";
+                }
+
+                return "HCP";
             })
             ->editColumn('specialties_name',function ($model){
                 return $model->specialties_name ?VarByLang($model->specialties_name,'en'):"N/A";
@@ -41,15 +48,23 @@ class UsersDataTable extends DataTable
             ->filterColumn('type',function ($query,$keyword){
                 $user_type=0;
                 $search=false;
-                if(strtolower($keyword)==strtolower("HCP")){
-                    $user_type=2;
-                    $search=true;
-                }
-                elseif(strtolower($keyword)== strtolower("Admin")){
+                if(strtolower($keyword)== strtolower("Admin")){
                     $user_type=0;
                     $search=true;
                 }
+                elseif(strtolower($keyword)== strtolower("Registered")){
+                    $user_type=1;
+                    $search=true;
+                }
+                elseif(strtolower($keyword)==strtolower("HCP")){
+                    $user_type=2;
+                    $search=true;
+                }
                 elseif($keyword==0){
+                    $search=true;
+                    $user_type=$keyword;
+                }
+                elseif($keyword==1){
                     $search=true;
                     $user_type=$keyword;
                 }
