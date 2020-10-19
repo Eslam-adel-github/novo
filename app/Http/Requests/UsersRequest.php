@@ -62,6 +62,7 @@ class UsersRequest extends FormRequest
             'password'  =>  trans('main.password'),
             'image'  =>  trans('main.image'),
             'gender'  =>  trans('main.gender'),
+            'specialty_id'=>trans('main.specialty')
         ];
     }
 }

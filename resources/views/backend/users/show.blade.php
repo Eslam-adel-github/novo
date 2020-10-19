@@ -105,7 +105,7 @@
                             @endif
                             <br><hr>
                         </div>
-                        @if($show->type==2)
+                        @if($show->type !=0)
                             <div class="col-md-6">
                                 <strong>{{ __('main.specialty') }}: </strong>
                                 {{ $show->specaility? VarByLang(getData(collect($show->specaility),"name")) : '' }}

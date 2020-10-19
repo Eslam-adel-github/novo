@@ -16,7 +16,7 @@ class GetAllDoctors extends Controller
      */
     public function __invoke(UserRepository $repository)
     {
-        return $this->apiResponse($repository->instance()->get()->map(function ($model) {
+        return $this->apiResponse($repository->instance()->where("type",'<>',0)->get()->map(function ($model) {
             return [
                 'id' => $model->id,
                 'text' =>$model->name,
